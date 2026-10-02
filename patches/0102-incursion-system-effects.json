@@ -1,7 +1,7 @@
 {
  "id": "0102-incursion-system-effects",
- "status": "proposed",
- "description": "OffensiveDefensiveReduction (Sansha/Drifter incursion system-effect beacons). Pyfa: PostPercent by systemEffectDamageReduction on missile charges' em/thermal/kinetic/explosive damage, on Smart Bomb modules' damage, on drones' and Gunnery turrets' damageMultiplier; and PostPercent the ship's armor/shield <type>DamageResonance by armor/shield<Type>DamageResistanceBonus. Drones are modelled here as OwnerRequiredSkill(Drones) on the character domain - engines should confirm drone scoping.",
+ "status": "applied",
+ "description": "OffensiveDefensiveReduction (Sansha/Drifter incursion system-effect beacons). Pyfa: PostPercent by systemEffectDamageReduction on missile charges' em/thermal/kinetic/explosive damage, on Smart Bomb modules' damage, on drones' and Gunnery turrets' damageMultiplier; and PostPercent the ship's armor/shield <type>DamageResonance by armor/shield<Type>DamageResistanceBonus. Drones are modelled here as OwnerRequiredSkill(Drones) on the character domain. Stacking: Pyfa applies all incursion system-effect modifiers WITHOUT stacking penalty. The effect therefore carries \"stacking_exempt\": true; engines must not stacking-penalise modifiers from an effect with this flag (resonances included). Drone scoping: OwnerRequiredSkill(Drones) equals Pyfa's 'all drones' because every published drone requires Drones directly (review by engine owner A, 2026-10-03).",
  "reference": "Pyfa eos/effects.py (behaviour only)",
  "set": {
   "effects": {
@@ -151,8 +151,10 @@
       6,
       0
      ]
-    ]
+    ],
+    "stacking_exempt": true
    }
   }
- }
+ },
+ "applied_in_revision": 4
 }

@@ -14,7 +14,9 @@ domain: 0 item, 1 ship, 2 char, 5 targetID ; op 6 = PostPercent
 import gzip, json, os, sys
 
 ds = json.load(gzip.open(sys.argv[1]))
-out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), "..", "patches", "proposed")
+# 0101-0103 were reviewed by engine owner A and promoted in dataset revision 4: they now live in patches/
+# (applied by default) and keep their review notes there. This script regenerates only the modifier lists.
+out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), "..", "patches")
 A = {a["name"]: int(k) for k, a in ds["attributes"].items()}
 E = {e["name"]: int(k) for k, e in ds["effects"].items()}
 T = {t["name"]: int(k) for k, t in ds["types"].items()}
@@ -68,9 +70,17 @@ PATCHES = [
 
 os.makedirs(out, exist_ok=True)
 for pid, desc, effs in PATCHES:
-    body = {"id": pid, "status": "proposed", "description": desc, "reference": "Pyfa eos/effects.py (behaviour only)",
-            "set": {"effects": {str(k): {"mods": v} for k, v in effs.items()}}}
-    with open(os.path.join(out, pid + ".json"), "w", encoding="utf-8") as f:
+    path = os.path.join(out, pid + ".json")
+    prev = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    effects = {str(k): {"mods": v} for k, v in effs.items()}
+    if pid.startswith("0102"):  # Pyfa: incursion system effects are not stacking-penalised
+        for e in effects.values():
+            e["stacking_exempt"] = True
+    body = {"id": pid, "status": prev.get("status", "proposed"), "description": prev.get("description", desc),
+            "reference": "Pyfa eos/effects.py (behaviour only)", "set": {"effects": effects}}
+    if "applied_in_revision" in prev:
+        body["applied_in_revision"] = prev["applied_in_revision"]
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(body, f, indent=1, ensure_ascii=False)
         f.write("\n")
     print(pid, sum(len(v) for v in effs.values()), "mods")

@@ -40,7 +40,7 @@ Consumers get the newest release with `gh release download -R EX-CT/eve-sde-pipe
 |---|---|
 | `types` | published ships/modules/charges/skills/drones/fighters/implants/boosters/subsystems/structures/structure modules + mutaplasmid-related + dogma-carrying celestials; attrs, effects, group/category/market/meta, en name (`names.zh` for Chinese) |
 | `groups`, `categories`, `market_groups`, `meta_groups`, `units` | hierarchy + names (zh in `names_i18n.zh`) |
-| `attributes`, `effects` | dogma attributes (default, stackable, high-is-good, unit) and effects (category, duration/range/falloff attrs, compressed modifierInfo) |
+| `attributes`, `effects` | dogma attributes (default, stackable, high-is-good, unit) and effects (category, duration/range/falloff attrs, compressed modifierInfo; optional `stacking_exempt: true` = never stacking-penalise this effect's modifiers, r4+) |
 | `dbuffs` | warfare buff collections (command bursts, environment buffs) |
 | `mutaplasmids` | dynamic attribute ranges, input/output types |
 | `fighter_abilities` | fighter ability slots |
@@ -48,7 +48,7 @@ Consumers get the newest release with `gh release download -R EX-CT/eve-sde-pipe
 | `traits` | ship/subsystem bonus text (role, misc, per skill), en + zh |
 | `clone_grades` | alpha clone skill caps |
 | `environment` | wormhole classes, systems → WH class / effect beacon, effect beacons (`kind`: wormhole, abyssal, triglavian, incursion, faction_warfare, metaliminal_storm, other; `dbuffs`), system-wide effects, type lists |
-| `patches` | applied data patches (`patches/*.json`); `patches/proposed/` are opt-in |
+| `patches` | applied data patches (`patches/*.json`: 0001 skill self-bonuses, 0101 AoE burst projectors, 0102 incursion system effects, 0103 breacher pod DC since r4); `patches/proposed/` are opt-in |
 
 See [`reports/pyfa-effects-coverage.md`](reports/pyfa-effects-coverage.md) for which Pyfa effects modifierInfo
 cannot express and how each is handled.

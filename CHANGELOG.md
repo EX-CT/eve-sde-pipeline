@@ -5,6 +5,25 @@ doesn't know. `dataset_revision` counts content revisions of the pipeline output
 tags carry a suffix (`dataset-<build>-r<rev>.json.gz`, release `sde-<build>-r<rev>`), so published files are never
 overwritten.
 
+## Revision 4 (pipeline 0.4.0, 2026-10-03)
+- Promoted the three reviewed patches from `patches/proposed/` to `patches/` (applied by default). Engine owner A
+  approved all three (eve-dogma-rs `docs/review-sde-proposed-patches.md`):
+  - `0101-aoe-burst-projectors`: modifiers for doomsdayAOEWeb/Paint/Damp/Track and
+    structureModuleEffectWeaponDisruption. Engine notes: the burst effects have no `range_attr`, so use range factor 1
+    (as Pyfa does). The Standup WD keeps range 54 / falloff 2044. `disallowOffensiveModifiers` still blocks all of them.
+  - `0102-incursion-system-effects`: modifiers for OffensiveDefensiveReduction (effect 4728). The effect now carries
+    a new key, `"stacking_exempt": true`, because Pyfa applies incursion effects **without stacking penalty**.
+    Engines must not stacking-penalise modifiers from effects with this flag. The key is additive; loaders that
+    ignore unknown keys still work, but they will stacking-penalise these modifiers.
+  - `0103-breacher-pod-damage-control`: the moduleBonusBreacherPodDamageControl ship modifier.
+- `dataset_revision` 4, release `sde-3569502-r4`, file `dataset-3569502-r4.json.gz`. Earlier files are unchanged.
+- Changed sections vs r3: `effects` (7 effects gain `mods`; 4728 also gains `stacking_exempt`), `patches`,
+  `dataset_revision`, `generator`. Everything else is byte-identical.
+- Verified: engine A (eve-dogma-rs) gives identical output on all 326 bench 1.8.0 cases with r3 and r4, because A
+  handles these effects engine-side.
+- CI: the coverage job clones the public EX-CT/eve-dogma-rs and Pyfa master on every run to refresh
+  `tools/engine-effect-names.json`. The committed list is kept as a fallback.
+
 ## Revision 3 (pipeline 0.3.0, 2026-10-03)
 - `environment.effect_beacons[*].dbuffs`: the warfare buffs `{buffID: value}` that each environment beacon emits
   (abyssal weather, clouds, …). Engines can apply them the way they apply fleet command bursts.

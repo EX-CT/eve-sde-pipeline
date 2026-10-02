@@ -55,6 +55,17 @@ class TestDataset(unittest.TestCase):
         self.assertTrue(any(b["dbuffs"] for b in env["effect_beacons"].values()))
 
 
+    def test_promoted_patches_r4(self):
+        ids = [p["id"] for p in self.ds["patches"]]
+        for pid in ("0101-aoe-burst-projectors", "0102-incursion-system-effects", "0103-breacher-pod-damage-control"):
+            self.assertIn(pid, ids)
+        eff = {e["name"]: e for e in self.ds["effects"].values()}
+        self.assertTrue(eff["OffensiveDefensiveReduction"].get("stacking_exempt"))  # Pyfa: no stacking penalty
+        for n in ("doomsdayAOEWeb", "doomsdayAOEPaint", "moduleBonusBreacherPodDamageControl"):
+            self.assertTrue(eff[n]["mods"], n)
+        self.assertFalse(eff["doomsdayAOEWeb"].get("stacking_exempt"))
+
+
 class TestDiff(unittest.TestCase):
     def test_synthetic(self):
         from sdepipe import diff as dmod

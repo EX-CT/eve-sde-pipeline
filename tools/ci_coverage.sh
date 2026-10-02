@@ -8,6 +8,7 @@ DS=$1; OUT=$2; HERE=$(cd "$(dirname "$0")" && pwd)
 mkdir -p "$OUT" /tmp/cov/pyfa/eos
 curl -sfL https://raw.githubusercontent.com/pyfa-org/Pyfa/master/eos/effects.py -o /tmp/cov/pyfa/eos/effects.py
 SRC=()
+rm -rf /tmp/cov/eve-dogma-rs
 if git clone -q --depth 1 https://github.com/EX-CT/eve-dogma-rs /tmp/cov/eve-dogma-rs 2>/dev/null; then
   SRC=(--engine-src /tmp/cov/eve-dogma-rs/src)
   echo "engine source: EX-CT/eve-dogma-rs@$(git -C /tmp/cov/eve-dogma-rs rev-parse --short HEAD)"

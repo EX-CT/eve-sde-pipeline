@@ -14,7 +14,7 @@ if git clone -q --depth 1 https://github.com/EX-CT/eve-dogma-rs /tmp/cov/eve-dog
 else
   echo "WARN: could not clone EX-CT/eve-dogma-rs, using committed snapshot only" >&2
 fi
-python "$HERE/pyfa_effects.py" --pyfa /tmp/cov/pyfa --dataset "$DS" "${SRC[@]}" \
+python3 "$HERE/pyfa_effects.py" --pyfa /tmp/cov/pyfa --dataset "$DS" "${SRC[@]}" \
   --engine-names "$HERE/engine-effect-names.json" --dump-engine-names "$OUT/engine-effect-names.json" --out "$OUT"
 if ! diff -q "$HERE/engine-effect-names.json" "$OUT/engine-effect-names.json" >/dev/null; then
   echo "NOTE: engine effect-name list changed vs committed snapshot (commit $OUT/engine-effect-names.json to update)"

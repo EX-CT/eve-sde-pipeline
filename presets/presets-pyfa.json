@@ -1,0 +1,4903 @@
+{
+ "damage_patterns": {
+  "fields": [
+   "pyfa_id",
+   "name",
+   "em",
+   "thermal",
+   "kinetic",
+   "explosive"
+  ],
+  "items": [
+   {
+    "amounts": {
+     "em": 25,
+     "explosive": 25,
+     "kinetic": 25,
+     "thermal": 25
+    },
+    "name": "Uniform",
+    "pyfa_id": -1,
+    "ratio": [
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Generic]EM",
+    "pyfa_id": -2,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 1
+    },
+    "name": "[Generic]Thermal",
+    "pyfa_id": -3,
+    "ratio": [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 1,
+     "thermal": 0
+    },
+    "name": "[Generic]Kinetic",
+    "pyfa_id": -4,
+    "ratio": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 1,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Generic]Explosive",
+    "pyfa_id": -5,
+    "ratio": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 3
+    },
+    "name": "[Frequency Crystals]|[T2] Aurora",
+    "pyfa_id": -6,
+    "ratio": [
+     0.625,
+     0.375,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 9,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 2
+    },
+    "name": "[Frequency Crystals]|[T2] Scorch",
+    "pyfa_id": -7,
+    "ratio": [
+     0.818182,
+     0.181818,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Frequency Crystals]Radio",
+    "pyfa_id": -8,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 4,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 2
+    },
+    "name": "[Frequency Crystals]Microwave",
+    "pyfa_id": -9,
+    "ratio": [
+     0.666667,
+     0.333333,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 2
+    },
+    "name": "[Frequency Crystals]Infrared",
+    "pyfa_id": -10,
+    "ratio": [
+     0.714286,
+     0.285714,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 3
+    },
+    "name": "[Frequency Crystals]Standard",
+    "pyfa_id": -11,
+    "ratio": [
+     0.625,
+     0.375,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 6,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 3
+    },
+    "name": "[Frequency Crystals]Ultraviolet",
+    "pyfa_id": -12,
+    "ratio": [
+     0.666667,
+     0.333333,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 6,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 4
+    },
+    "name": "[Frequency Crystals]Xray",
+    "pyfa_id": -13,
+    "ratio": [
+     0.6,
+     0.4,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 7,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 4
+    },
+    "name": "[Frequency Crystals]Gamma",
+    "pyfa_id": -14,
+    "ratio": [
+     0.636364,
+     0.363636,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 7,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 5
+    },
+    "name": "[Frequency Crystals]Multifrequency",
+    "pyfa_id": -15,
+    "ratio": [
+     0.583333,
+     0.416667,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 7,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 7
+    },
+    "name": "[Frequency Crystals]|[T2] Gleam",
+    "pyfa_id": -16,
+    "ratio": [
+     0.5,
+     0.5,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 7.7,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 7.7
+    },
+    "name": "[Frequency Crystals]|[T2] Conflagration",
+    "pyfa_id": -17,
+    "ratio": [
+     0.5,
+     0.5,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 33681,
+     "kinetic": 0,
+     "thermal": 66319
+    },
+    "name": "[Exotic Plasma]|[T2] Mystic",
+    "pyfa_id": -18,
+    "ratio": [
+     0.0,
+     0.66319,
+     0.0,
+     0.33681
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 39481,
+     "kinetic": 0,
+     "thermal": 60519
+    },
+    "name": "[Exotic Plasma]Meson",
+    "pyfa_id": -19,
+    "ratio": [
+     0.0,
+     0.60519,
+     0.0,
+     0.39481
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 40263,
+     "kinetic": 0,
+     "thermal": 59737
+    },
+    "name": "[Exotic Plasma]Baryon",
+    "pyfa_id": -20,
+    "ratio": [
+     0.0,
+     0.59737,
+     0.0,
+     0.40263
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 30792,
+     "kinetic": 0,
+     "thermal": 69208
+    },
+    "name": "[Exotic Plasma]Tetryon",
+    "pyfa_id": -21,
+    "ratio": [
+     0.0,
+     0.69208,
+     0.0,
+     0.30792
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 44137,
+     "kinetic": 0,
+     "thermal": 55863
+    },
+    "name": "[Exotic Plasma]|[T2] Occult",
+    "pyfa_id": -22,
+    "ratio": [
+     0.0,
+     0.55863,
+     0.0,
+     0.44137
+    ]
+   },
+   {
+    "amounts": {
+     "em": 51817,
+     "explosive": 0,
+     "kinetic": 48183,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]|[T2] StrikeSnipe",
+    "pyfa_id": -23,
+    "ratio": [
+     0.51817,
+     0.0,
+     0.48183,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 76476,
+     "explosive": 0,
+     "kinetic": 23524,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]MesmerFlux",
+    "pyfa_id": -24,
+    "ratio": [
+     0.76476,
+     0.0,
+     0.23524,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 23376,
+     "explosive": 0,
+     "kinetic": 76624,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]SlamBolt",
+    "pyfa_id": -25,
+    "ratio": [
+     0.23376,
+     0.0,
+     0.76624,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 19820,
+     "explosive": 0,
+     "kinetic": 80180,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]BlastShot",
+    "pyfa_id": -26,
+    "ratio": [
+     0.1982,
+     0.0,
+     0.8018,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 80206,
+     "explosive": 0,
+     "kinetic": 19794,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]GalvaSurge",
+    "pyfa_id": -27,
+    "ratio": [
+     0.80206,
+     0.0,
+     0.19794,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 50547,
+     "explosive": 0,
+     "kinetic": 49453,
+     "thermal": 0
+    },
+    "name": "[Condenser Packs]|[T2] ElectroPunch",
+    "pyfa_id": -28,
+    "ratio": [
+     0.50547,
+     0.0,
+     0.49453,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 4,
+     "thermal": 4
+    },
+    "name": "[Hybrid Charges]|[T2] Spike",
+    "pyfa_id": -29,
+    "ratio": [
+     0.0,
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 5,
+     "thermal": 6
+    },
+    "name": "[Hybrid Charges]|[T2] Null",
+    "pyfa_id": -30,
+    "ratio": [
+     0.0,
+     0.545455,
+     0.454545,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 3,
+     "thermal": 2
+    },
+    "name": "[Hybrid Charges]Iron",
+    "pyfa_id": -31,
+    "ratio": [
+     0.0,
+     0.4,
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 4,
+     "thermal": 2
+    },
+    "name": "[Hybrid Charges]Tungsten",
+    "pyfa_id": -32,
+    "ratio": [
+     0.0,
+     0.333333,
+     0.666667,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 4,
+     "thermal": 3
+    },
+    "name": "[Hybrid Charges]Iridium",
+    "pyfa_id": -33,
+    "ratio": [
+     0.0,
+     0.428571,
+     0.571429,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 5,
+     "thermal": 3
+    },
+    "name": "[Hybrid Charges]Lead",
+    "pyfa_id": -34,
+    "ratio": [
+     0.0,
+     0.375,
+     0.625,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 5,
+     "thermal": 4
+    },
+    "name": "[Hybrid Charges]Thorium",
+    "pyfa_id": -35,
+    "ratio": [
+     0.0,
+     0.444444,
+     0.555556,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 6,
+     "thermal": 4
+    },
+    "name": "[Hybrid Charges]Uranium",
+    "pyfa_id": -36,
+    "ratio": [
+     0.0,
+     0.4,
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 6,
+     "thermal": 5
+    },
+    "name": "[Hybrid Charges]Plutonium",
+    "pyfa_id": -37,
+    "ratio": [
+     0.0,
+     0.454545,
+     0.545455,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 7,
+     "thermal": 5
+    },
+    "name": "[Hybrid Charges]Antimatter",
+    "pyfa_id": -38,
+    "ratio": [
+     0.0,
+     0.416667,
+     0.583333,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 6,
+     "thermal": 8
+    },
+    "name": "[Hybrid Charges]|[T2] Javelin",
+    "pyfa_id": -39,
+    "ratio": [
+     0.0,
+     0.571429,
+     0.428571,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 7.7,
+     "thermal": 7.7
+    },
+    "name": "[Hybrid Charges]|[T2] Void",
+    "pyfa_id": -40,
+    "ratio": [
+     0.0,
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 5,
+     "kinetic": 3,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]|[T2] Tremor",
+    "pyfa_id": -41,
+    "ratio": [
+     0.0,
+     0.0,
+     0.375,
+     0.625
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 6,
+     "kinetic": 5,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]|[T2] Barrage",
+    "pyfa_id": -42,
+    "ratio": [
+     0.0,
+     0.0,
+     0.454545,
+     0.545455
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 1,
+     "kinetic": 4,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]Carbonized Lead",
+    "pyfa_id": -43,
+    "ratio": [
+     0.0,
+     0.0,
+     0.8,
+     0.2
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 4,
+     "kinetic": 1,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]Nuclear",
+    "pyfa_id": -44,
+    "ratio": [
+     0.0,
+     0.0,
+     0.2,
+     0.8
+    ]
+   },
+   {
+    "amounts": {
+     "em": 3,
+     "explosive": 0,
+     "kinetic": 2,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]Proton",
+    "pyfa_id": -45,
+    "ratio": [
+     0.6,
+     0.0,
+     0.4,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 3,
+     "kinetic": 2,
+     "thermal": 3
+    },
+    "name": "[Projectile Ammo]Depleted Uranium",
+    "pyfa_id": -46,
+    "ratio": [
+     0.0,
+     0.375,
+     0.25,
+     0.375
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 2,
+     "kinetic": 6,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]Titanium Sabot",
+    "pyfa_id": -47,
+    "ratio": [
+     0.0,
+     0.0,
+     0.75,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 9,
+     "explosive": 2,
+     "kinetic": 1,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]EMP",
+    "pyfa_id": -48,
+    "ratio": [
+     0.75,
+     0.0,
+     0.0833333,
+     0.166667
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 2,
+     "thermal": 10
+    },
+    "name": "[Projectile Ammo]Phased Plasma",
+    "pyfa_id": -49,
+    "ratio": [
+     0.0,
+     0.833333,
+     0.166667,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 10,
+     "kinetic": 2,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]Fusion",
+    "pyfa_id": -50,
+    "ratio": [
+     0.0,
+     0.0,
+     0.166667,
+     0.833333
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 9,
+     "kinetic": 5,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]|[T2] Quake",
+    "pyfa_id": -51,
+    "ratio": [
+     0.0,
+     0.0,
+     0.357143,
+     0.642857
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 12.1,
+     "kinetic": 3.3,
+     "thermal": 0
+    },
+    "name": "[Projectile Ammo]|[T2] Hail",
+    "pyfa_id": -52,
+    "ratio": [
+     0.0,
+     0.0,
+     0.214286,
+     0.785714
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Missiles]Mjolnir",
+    "pyfa_id": -53,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 1
+    },
+    "name": "[Missiles]Inferno",
+    "pyfa_id": -54,
+    "ratio": [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 1,
+     "thermal": 0
+    },
+    "name": "[Missiles]Scourge",
+    "pyfa_id": -55,
+    "ratio": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 1,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Missiles]Nova",
+    "pyfa_id": -56,
+    "ratio": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 6400,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Bombs]Electron Bomb",
+    "pyfa_id": -57,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 6400
+    },
+    "name": "[Bombs]Scorch Bomb",
+    "pyfa_id": -58,
+    "ratio": [
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 6400,
+     "thermal": 0
+    },
+    "name": "[Bombs]Concussion Bomb",
+    "pyfa_id": -59,
+    "ratio": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 6400,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[Bombs]Shrapnel Bomb",
+    "pyfa_id": -60,
+    "ratio": [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 126,
+     "explosive": 230,
+     "kinetic": 218,
+     "thermal": 427
+    },
+    "name": "[NPC][Abyssal]All",
+    "pyfa_id": -61,
+    "ratio": [
+     0.125874,
+     0.426573,
+     0.217782,
+     0.22977
+    ]
+   },
+   {
+    "amounts": {
+     "em": 450,
+     "explosive": 398,
+     "kinetic": 80,
+     "thermal": 72
+    },
+    "name": "[NPC][Abyssal]Angel",
+    "pyfa_id": -62,
+    "ratio": [
+     0.45,
+     0.072,
+     0.08,
+     0.398
+    ]
+   },
+   {
+    "amounts": {
+     "em": 53,
+     "explosive": 295,
+     "kinetic": 94,
+     "thermal": 559
+    },
+    "name": "[NPC][Abyssal]Concord",
+    "pyfa_id": -63,
+    "ratio": [
+     0.0529471,
+     0.558442,
+     0.0939061,
+     0.294705
+    ]
+   },
+   {
+    "amounts": {
+     "em": 250,
+     "explosive": 250,
+     "kinetic": 250,
+     "thermal": 250
+    },
+    "name": "[NPC][Abyssal]Drifter",
+    "pyfa_id": -64,
+    "ratio": [
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 250,
+     "explosive": 250,
+     "kinetic": 250,
+     "thermal": 250
+    },
+    "name": "[NPC][Abyssal]Drones",
+    "pyfa_id": -65,
+    "ratio": [
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 590,
+     "thermal": 410
+    },
+    "name": "[NPC][Abyssal]Overmind",
+    "pyfa_id": -66,
+    "ratio": [
+     0.0,
+     0.41,
+     0.59,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 569,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 431
+    },
+    "name": "[NPC][Abyssal]Sansha",
+    "pyfa_id": -67,
+    "ratio": [
+     0.569,
+     0.431,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 402,
+     "explosive": 98,
+     "kinetic": 98,
+     "thermal": 402
+    },
+    "name": "[NPC][Abyssal]Seeker",
+    "pyfa_id": -68,
+    "ratio": [
+     0.402,
+     0.402,
+     0.098,
+     0.098
+    ]
+   },
+   {
+    "amounts": {
+     "em": 313,
+     "explosive": 187,
+     "kinetic": 187,
+     "thermal": 313
+    },
+    "name": "[NPC][Abyssal]Sleeper",
+    "pyfa_id": -69,
+    "ratio": [
+     0.313,
+     0.313,
+     0.187,
+     0.187
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 385,
+     "kinetic": 0,
+     "thermal": 615
+    },
+    "name": "[NPC][Abyssal]Triglavian",
+    "pyfa_id": -70,
+    "ratio": [
+     0.0,
+     0.615,
+     0.0,
+     0.385
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1838,
+     "explosive": 3838,
+     "kinetic": 2215,
+     "thermal": 562
+    },
+    "name": "[NPC][Asteroid]Angel Cartel",
+    "pyfa_id": -71,
+    "ratio": [
+     0.217438,
+     0.0664853,
+     0.262037,
+     0.45404
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5067,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 4214
+    },
+    "name": "[NPC][Asteroid]Blood Raiders",
+    "pyfa_id": -72,
+    "ratio": [
+     0.545954,
+     0.454046,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 7413,
+     "thermal": 1828
+    },
+    "name": "[NPC][Asteroid]Guristas",
+    "pyfa_id": -73,
+    "ratio": [
+     0.0,
+     0.197814,
+     0.802186,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 394,
+     "explosive": 1687,
+     "kinetic": 1090,
+     "thermal": 666
+    },
+    "name": "[NPC][Asteroid]Rogue Drone",
+    "pyfa_id": -74,
+    "ratio": [
+     0.102684,
+     0.173573,
+     0.284076,
+     0.439666
+    ]
+   },
+   {
+    "amounts": {
+     "em": 5586,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 4112
+    },
+    "name": "[NPC][Asteroid]Sanshas Nation",
+    "pyfa_id": -75,
+    "ratio": [
+     0.575995,
+     0.424005,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 4813,
+     "thermal": 5373
+    },
+    "name": "[NPC][Asteroid]Serpentis",
+    "pyfa_id": -76,
+    "ratio": [
+     0.0,
+     0.527489,
+     0.472511,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 147,
+     "thermal": 147
+    },
+    "name": "[NPC][Burner][Team]Enyo",
+    "pyfa_id": -77,
+    "ratio": [
+     0.0,
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 247,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner][Team]Hawk",
+    "pyfa_id": -78,
+    "ratio": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 36,
+     "explosive": 182,
+     "kinetic": 50,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner][Team]Jaguar",
+    "pyfa_id": -79,
+    "ratio": [
+     0.134328,
+     0.0,
+     0.186567,
+     0.679104
+    ]
+   },
+   {
+    "amounts": {
+     "em": 232,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner][Team]Vengeance",
+    "pyfa_id": -80,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 90,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 90
+    },
+    "name": "[NPC][Burner]Cruor",
+    "pyfa_id": -81,
+    "ratio": [
+     0.5,
+     0.5,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 55,
+     "explosive": 96,
+     "kinetic": 20,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner]Dramiel",
+    "pyfa_id": -82,
+    "ratio": [
+     0.321637,
+     0.0,
+     0.116959,
+     0.561404
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 154,
+     "thermal": 110
+    },
+    "name": "[NPC][Burner]Daredevil",
+    "pyfa_id": -83,
+    "ratio": [
+     0.0,
+     0.416667,
+     0.583333,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 135,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 30
+    },
+    "name": "[NPC][Burner]Succubus",
+    "pyfa_id": -84,
+    "ratio": [
+     0.818182,
+     0.181818,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 228,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner]Worm",
+    "pyfa_id": -85,
+    "ratio": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 260,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 100
+    },
+    "name": "[NPC][Burner]Ashimmu",
+    "pyfa_id": -86,
+    "ratio": [
+     0.722222,
+     0.277778,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 413,
+     "thermal": 413
+    },
+    "name": "[NPC][Burner]Talos",
+    "pyfa_id": -87,
+    "ratio": [
+     0.0,
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 90,
+     "kinetic": 75,
+     "thermal": 0
+    },
+    "name": "[NPC][Burner]Sentinel",
+    "pyfa_id": -88,
+    "ratio": [
+     0.0,
+     0.0,
+     0.454545,
+     0.545455
+    ]
+   },
+   {
+    "amounts": {
+     "em": 369,
+     "explosive": 3302,
+     "kinetic": 1395,
+     "thermal": 533
+    },
+    "name": "[NPC][Deadspace]Angel Cartel",
+    "pyfa_id": -89,
+    "ratio": [
+     0.0659046,
+     0.0951956,
+     0.249152,
+     0.589748
+    ]
+   },
+   {
+    "amounts": {
+     "em": 6040,
+     "explosive": 15,
+     "kinetic": 10,
+     "thermal": 5052
+    },
+    "name": "[NPC][Deadspace]Blood Raiders",
+    "pyfa_id": -90,
+    "ratio": [
+     0.543312,
+     0.454439,
+     0.000899523,
+     0.00134928
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 9680,
+     "thermal": 1531
+    },
+    "name": "[NPC][Deadspace]Guristas",
+    "pyfa_id": -91,
+    "ratio": [
+     0.0,
+     0.136562,
+     0.863438,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 276,
+     "explosive": 871,
+     "kinetic": 1069,
+     "thermal": 1071
+    },
+    "name": "[NPC][Deadspace]Rogue Drone",
+    "pyfa_id": -92,
+    "ratio": [
+     0.0839671,
+     0.325829,
+     0.325221,
+     0.264983
+    ]
+   },
+   {
+    "amounts": {
+     "em": 3009,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 2237
+    },
+    "name": "[NPC][Deadspace]Sanshas Nation",
+    "pyfa_id": -93,
+    "ratio": [
+     0.57358,
+     0.42642,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 1929,
+     "thermal": 3110
+    },
+    "name": "[NPC][Deadspace]Serpentis",
+    "pyfa_id": -94,
+    "ratio": [
+     0.0,
+     0.617186,
+     0.382814,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 583,
+     "kinetic": 0,
+     "thermal": 417
+    },
+    "name": "[NPC][Invasion][Triglavian Entities]Dread",
+    "pyfa_id": -95,
+    "ratio": [
+     0.0,
+     0.417,
+     0.0,
+     0.583
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 390,
+     "kinetic": 0,
+     "thermal": 610
+    },
+    "name": "[NPC][Invasion][Triglavian Entities]Normal Subcaps",
+    "pyfa_id": -96,
+    "ratio": [
+     0.0,
+     0.61,
+     0.0,
+     0.39
+    ]
+   },
+   {
+    "amounts": {
+     "em": 367,
+     "explosive": 112,
+     "kinetic": 367,
+     "thermal": 155
+    },
+    "name": "[NPC][Invasion][Triglavian Entities]Subcaps w/missiles 0% spool up",
+    "pyfa_id": -97,
+    "ratio": [
+     0.366633,
+     0.154845,
+     0.366633,
+     0.111888
+    ]
+   },
+   {
+    "amounts": {
+     "em": 291,
+     "explosive": 175,
+     "kinetic": 291,
+     "thermal": 243
+    },
+    "name": "[NPC][Invasion][Triglavian Entities]Subcaps w/missiles 50% spool up",
+    "pyfa_id": -98,
+    "ratio": [
+     0.291,
+     0.243,
+     0.291,
+     0.175
+    ]
+   },
+   {
+    "amounts": {
+     "em": 241,
+     "explosive": 217,
+     "kinetic": 241,
+     "thermal": 301
+    },
+    "name": "[NPC][Invasion][Triglavian Entities]Subcaps w/missiles 100% spool up",
+    "pyfa_id": -99,
+    "ratio": [
+     0.241,
+     0.301,
+     0.241,
+     0.217
+    ]
+   },
+   {
+    "amounts": {
+     "em": 583,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 417
+    },
+    "name": "[NPC][Invasion][Amarr EDENCOM Entities]Dread/Subcaps",
+    "pyfa_id": -100,
+    "ratio": [
+     0.583,
+     0.417,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1000,
+     "explosive": 0,
+     "kinetic": 0,
+     "thermal": 0
+    },
+    "name": "[NPC][Invasion][Caldari EDENCOM Entities]Dread",
+    "pyfa_id": -101,
+    "ratio": [
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 511,
+     "explosive": 440,
+     "kinetic": 29,
+     "thermal": 21
+    },
+    "name": "[NPC][Invasion][Caldari EDENCOM Entities]Subcaps",
+    "pyfa_id": -102,
+    "ratio": [
+     0.51049,
+     0.020979,
+     0.028971,
+     0.43956
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 583,
+     "thermal": 417
+    },
+    "name": "[NPC][Invasion][Gallente EDENCOM Entities]Dread/Subcaps",
+    "pyfa_id": -103,
+    "ratio": [
+     0.0,
+     0.417,
+     0.583,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 417,
+     "kinetic": 583,
+     "thermal": 0
+    },
+    "name": "[NPC][Invasion][Minmatar EDENCOM Entities]Dread",
+    "pyfa_id": -104,
+    "ratio": [
+     0.0,
+     0.0,
+     0.583,
+     0.417
+    ]
+   },
+   {
+    "amounts": {
+     "em": 302,
+     "explosive": 234,
+     "kinetic": 328,
+     "thermal": 136
+    },
+    "name": "[NPC][Invasion][Minmatar EDENCOM Entities]Subcaps",
+    "pyfa_id": -105,
+    "ratio": [
+     0.302,
+     0.136,
+     0.328,
+     0.234
+    ]
+   },
+   {
+    "amounts": {
+     "em": 250,
+     "explosive": 250,
+     "kinetic": 250,
+     "thermal": 250
+    },
+    "name": "[NPC][Invasion]Drifter Entities",
+    "pyfa_id": -106,
+    "ratio": [
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 265,
+     "explosive": 235,
+     "kinetic": 235,
+     "thermal": 265
+    },
+    "name": "[NPC][Invasion]Sleeper Entities",
+    "pyfa_id": -107,
+    "ratio": [
+     0.265,
+     0.265,
+     0.235,
+     0.235
+    ]
+   },
+   {
+    "amounts": {
+     "em": 250,
+     "explosive": 250,
+     "kinetic": 250,
+     "thermal": 250
+    },
+    "name": "[NPC][Invasion]Rogue Drone Entities",
+    "pyfa_id": -108,
+    "ratio": [
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   {
+    "amounts": {
+     "em": 4464,
+     "explosive": 0,
+     "kinetic": 97,
+     "thermal": 3546
+    },
+    "name": "[NPC][Mission]Amarr Empire",
+    "pyfa_id": -109,
+    "ratio": [
+     0.550635,
+     0.4374,
+     0.011965,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 0,
+     "kinetic": 4867,
+     "thermal": 2139
+    },
+    "name": "[NPC][Mission]Caldari State",
+    "pyfa_id": -110,
+    "ratio": [
+     0.0,
+     0.30531,
+     0.69469,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 336,
+     "explosive": 412,
+     "kinetic": 212,
+     "thermal": 134
+    },
+    "name": "[NPC][Mission]CONCORD",
+    "pyfa_id": -111,
+    "ratio": [
+     0.30713,
+     0.122486,
+     0.193784,
+     0.3766
+    ]
+   },
+   {
+    "amounts": {
+     "em": 9,
+     "explosive": 0,
+     "kinetic": 2758,
+     "thermal": 3712
+    },
+    "name": "[NPC][Mission]Gallente Federation",
+    "pyfa_id": -112,
+    "ratio": [
+     0.0013891,
+     0.572928,
+     0.425683,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 612,
+     "explosive": 6,
+     "kinetic": 43,
+     "thermal": 483
+    },
+    "name": "[NPC][Mission]Khanid",
+    "pyfa_id": -113,
+    "ratio": [
+     0.534965,
+     0.422203,
+     0.0375874,
+     0.00524476
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1024,
+     "explosive": 4285,
+     "kinetic": 1655,
+     "thermal": 388
+    },
+    "name": "[NPC][Mission]Minmatar Republic",
+    "pyfa_id": -114,
+    "ratio": [
+     0.139282,
+     0.0527748,
+     0.225109,
+     0.582835
+    ]
+   },
+   {
+    "amounts": {
+     "em": 25,
+     "explosive": 0,
+     "kinetic": 625,
+     "thermal": 262
+    },
+    "name": "[NPC][Mission]Mordus Legion",
+    "pyfa_id": -115,
+    "ratio": [
+     0.0274123,
+     0.287281,
+     0.685307,
+     0.0
+    ]
+   },
+   {
+    "amounts": {
+     "em": 0,
+     "explosive": 79,
+     "kinetic": 10,
+     "thermal": 52
+    },
+    "name": "[NPC][Mission]Thukker",
+    "pyfa_id": -116,
+    "ratio": [
+     0.0,
+     0.368794,
+     0.070922,
+     0.560284
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1682,
+     "explosive": 3678,
+     "kinetic": 3678,
+     "thermal": 1347
+    },
+    "name": "[NPC]Sansha Incursion",
+    "pyfa_id": -117,
+    "ratio": [
+     0.161964,
+     0.129706,
+     0.354165,
+     0.354165
+    ]
+   },
+   {
+    "amounts": {
+     "em": 1472,
+     "explosive": 1384,
+     "kinetic": 1384,
+     "thermal": 1472
+    },
+    "name": "[NPC]Sleepers",
+    "pyfa_id": -118,
+    "ratio": [
+     0.257703,
+     0.257703,
+     0.242297,
+     0.242297
+    ]
+   }
+  ],
+  "license": {
+   "id": "LGPL-2.1-or-later",
+   "text": "Pyfa eos (c) Diego Duclos and contributors, GNU LGPL v2.1 or later (file header of eos/saveddata/*.py)"
+  },
+  "provenance": {
+   "commit": "1d9f72b71e6f218eadc494b3a0679f51692c89ea",
+   "file": "eos/saveddata/damagePattern.py (BUILTINS)",
+   "repo": "https://github.com/pyfa-org/Pyfa"
+  }
+ },
+ "format": "exct-presets-pyfa",
+ "format_version": 1,
+ "generator": "tools/make_presets.py",
+ "jargon": {
+  "items": {
+   "1": [
+    "1",
+    " I$"
+   ],
+   "10k": [
+    "10k",
+    "10000"
+   ],
+   "10kmn": [
+    "10kmn",
+    "10000mn"
+   ],
+   "2": [
+    "2",
+    " II$"
+   ],
+   "25k": [
+    "25k",
+    "25000"
+   ],
+   "25kmm": [
+    "25kmm",
+    "25000mm"
+   ],
+   "25m": [
+    "25m",
+    "25000mm"
+   ],
+   "3": [
+    "3",
+    " III$"
+   ],
+   "4": [
+    "4",
+    " IV$"
+   ],
+   "50k": [
+    "50k",
+    "50000"
+   ],
+   "50kmn": [
+    "50kmn",
+    "50000mn"
+   ],
+   "aar": [
+    "aar",
+    "ancillary (.+ )?(?<!remote )armor repairer"
+   ],
+   "ab": [
+    "(^| )ab",
+    "afterburner"
+   ],
+   "ac": [
+    "ac",
+    "autocannon"
+   ],
+   "acr": [
+    "acr",
+    "ancillary current router"
+   ],
+   "adc": [
+    "adc",
+    "assault damage control"
+   ],
+   "adcu": [
+    "adcu",
+    "assault damage control"
+   ],
+   "aif": [
+    "aif",
+    "multispectrum shield hardener"
+   ],
+   "am": [
+    "(^| )am",
+    "antimatter"
+   ],
+   "amarr": [
+    "amarr",
+    "radar"
+   ],
+   "anp": [
+    "anp",
+    "multispectrum coating"
+   ],
+   "anti": [
+    "anti",
+    "(shield|armor) reinforcer"
+   ],
+   "anti\\-": [
+    "anti-",
+    "(shield|armor) reinforcer"
+   ],
+   "ar": [
+    "(?<!remote )armor repairer"
+   ],
+   "armour": [
+    "armour",
+    "armor"
+   ],
+   "arsb": [
+    "arsb",
+    "ancillary remote shield booster"
+   ],
+   "arty": [
+    "arty",
+    "artillery"
+   ],
+   "asb": [
+    "asb",
+    "ancillary shield booster"
+   ],
+   "ats": [
+    "ats",
+    "auto targeting system"
+   ],
+   "bc": [
+    "bc",
+    "breach control"
+   ],
+   "bcs": [
+    "bcs",
+    "ballistic control system"
+   ],
+   "bcu": [
+    "bcu",
+    "ballistic control system",
+    "breach control"
+   ],
+   "bdc": [
+    "bdc",
+    "breach control"
+   ],
+   "bdcu": [
+    "bdcu",
+    "breach control"
+   ],
+   "blue": [
+    "blue",
+    "gravimetric"
+   ],
+   "boosh": [
+    "boosh",
+    "micro jump field generator"
+   ],
+   "bubble": [
+    "bubble",
+    "interdiction sphere launcher",
+    "warp disrupt probe",
+    "warp disruption field generator",
+    "warp disruption (.+ )?projector",
+    "mobile (.+ )?warp disruptor"
+   ],
+   "caar": [
+    "caar",
+    "capital ancillary (.+ )?(?<!remote )armor repairer"
+   ],
+   "caldari": [
+    "caldari",
+    "gravimetric"
+   ],
+   "caprech": [
+    "caprech",
+    "cap recharger"
+   ],
+   "caprelay": [
+    "caprelay",
+    "capacitor power relay"
+   ],
+   "car": [
+    "car",
+    "capital (.+ )?(?<!remote )armor repairer"
+   ],
+   "carsb": [
+    "carsb",
+    "capital ancillary remote shield booster"
+   ],
+   "casb": [
+    "casb",
+    "capital ancillary (.+ )?(?<!remote )shield booster"
+   ],
+   "cb": [
+    "cb",
+    "capacitor booster",
+    "command burst"
+   ],
+   "ccc": [
+    "ccc",
+    "capacitor control circuit"
+   ],
+   "cdfe": [
+    "cdfe",
+    "core defense field extender"
+   ],
+   "cehe": [
+    "cehe",
+    "capital (.+ )?emergency hull energizer"
+   ],
+   "cet": [
+    "cet",
+    "capital (.+ )?remote capacitor transmitter"
+   ],
+   "charge": [
+    "charge",
+    "cap booster \\d+"
+   ],
+   "cl": [
+    "(^| )cl",
+    "carbonized lead"
+   ],
+   "cm": [
+    "(^| )cm",
+    "cruise missile"
+   ],
+   "cml": [
+    "cml",
+    "(?<!xl )cruise (missile )?(launcher|bay)"
+   ],
+   "cn": [
+    "(^| )cn",
+    "caldari navy"
+   ],
+   "coproc": [
+    "coproc",
+    "co-proc"
+   ],
+   "cp": [
+    "cp",
+    "command processor"
+   ],
+   "cpr": [
+    "cpr",
+    "capacitor power relay"
+   ],
+   "craar": [
+    "craar",
+    "capital ancillary remote armor repairer"
+   ],
+   "crar": [
+    "crar",
+    "capital (.+ )?remote armor repairer"
+   ],
+   "crasb": [
+    "crasb",
+    "capital ancillary remote shield booster"
+   ],
+   "crct": [
+    "crct",
+    "capital (.+ )?remote capacitor transmitter"
+   ],
+   "cret": [
+    "cret",
+    "capital (.+ )?remote capacitor transmitter"
+   ],
+   "crr": [
+    "crr",
+    "capital (.+ )?remote shield booster",
+    "capital (.+ )?remote (armor|hull) repairer"
+   ],
+   "crsb": [
+    "crsb",
+    "capital (.+ )?remote shield booster"
+   ],
+   "csb": [
+    "csb",
+    "capital (.+ )?(?<!remote )shield booster"
+   ],
+   "cse": [
+    "cse",
+    "capital (.+ )?shield extender"
+   ],
+   "damp": [
+    "damp",
+    "sd-\\d00"
+   ],
+   "dampener": [
+    "dampener",
+    "sd-\\d00",
+    "(targeting range|scan resolution) dampening script"
+   ],
+   "db": [
+    "(^| )db",
+    "dark blood"
+   ],
+   "dc": [
+    "dc",
+    "(?<!assault )damage control"
+   ],
+   "dcu": [
+    "dcu",
+    "(?<!assault )damage control"
+   ],
+   "dd": [
+    "dd",
+    "doomsday",
+    "lance$",
+    "reaper",
+    "bosonic",
+    "arcing vorton projector"
+   ],
+   "dda": [
+    "dda",
+    "drone damage amplifier"
+   ],
+   "dg": [
+    "(^| )dg",
+    "dread guristas"
+   ],
+   "disco": [
+    "disco",
+    "smartbomb"
+   ],
+   "dla": [
+    "dla",
+    "drone link augmentor"
+   ],
+   "dnc": [
+    "dnc",
+    "drone navigation computer"
+   ],
+   "doomsday": [
+    "doomsday",
+    "lance$",
+    "reaper",
+    "bosonic",
+    "arcing vorton projector"
+   ],
+   "dtc": [
+    "dtc",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "dte": [
+    "dte",
+    "omnidirectional tracking enhancer"
+   ],
+   "dtl": [
+    "dtl",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "du": [
+    "(^| )du",
+    "depleted uranium"
+   ],
+   "eanm": [
+    "eanm",
+    "multispectrum energized membrane"
+   ],
+   "eccm": [
+    "eccm",
+    "(?<!remote )sensor booster",
+    "signal amplifier"
+   ],
+   "ecm": [
+    "ecm",
+    "jammer",
+    "ec-\\d00",
+    "lockbreaker bomb"
+   ],
+   "economiser": [
+    "economiser",
+    "economizer"
+   ],
+   "ehe": [
+    "ehe",
+    "emergency hull energizer"
+   ],
+   "em": [
+    "em",
+    "mjolnir (.+ )?(missile|rocket|torpedo)",
+    "electromagnetic",
+    "electron bomb"
+   ],
+   "enam": [
+    "enam",
+    "multispectrum energized membrane"
+   ],
+   "energised": [
+    "energised",
+    "energized"
+   ],
+   "ess": [
+    "encounter surveillance system"
+   ],
+   "et": [
+    "(^| )et",
+    "remote capacitor transmitter"
+   ],
+   "exp": [
+    "exp",
+    "nova (.+ )?(missile|rocket|torpedo)",
+    "proton smartbomb",
+    "shrapnel bomb"
+   ],
+   "expl": [
+    "expl",
+    "nova (.+ )?(missile|rocket|torpedo)",
+    "proton smartbomb",
+    "shrapnel bomb"
+   ],
+   "explo": [
+    "explo",
+    "nova (.+ )?(missile|rocket|torpedo)",
+    "proton smartbomb",
+    "shrapnel bomb"
+   ],
+   "explosive": [
+    "explosive",
+    "nova (.+ )?(missile|rocket|torpedo)",
+    "proton smartbomb",
+    "shrapnel bomb"
+   ],
+   "flex": [
+    "flex",
+    "resistance script"
+   ],
+   "fn": [
+    "(^| )fn",
+    "federation navy"
+   ],
+   "fof": [
+    "fof",
+    "auto-targeting (.+ )?missile"
+   ],
+   "fsu": [
+    "fsu",
+    "fighter support unit"
+   ],
+   "fvb": [
+    "fvb",
+    "focused void bomb"
+   ],
+   "gallente": [
+    "gallente",
+    "magnetometric"
+   ],
+   "gbomb": [
+    "gbomb",
+    "guided bomb"
+   ],
+   "gd": [
+    "gd",
+    "guidance disrupt",
+    "weapon disrupt",
+    "missile (precision|range) disruption script"
+   ],
+   "green": [
+    "green",
+    "magnetometric"
+   ],
+   "gs": [
+    "(^| )gs",
+    "gyrostabilizer"
+   ],
+   "gtfo": [
+    "gravitational transportation field oscillator"
+   ],
+   "ham": [
+    "(^| )ham",
+    "heavy assault missile"
+   ],
+   "haml": [
+    "haml",
+    "heavy assault missile (launcher|bay)"
+   ],
+   "haw": [
+    "haw",
+    "quad 800mm repeating cannon",
+    "triple neutron blaster cannon",
+    "quad mega pulse laser",
+    "rapid torpedo (launcher|bay)"
+   ],
+   "heatsink": [
+    "heatsink",
+    "heat sink"
+   ],
+   "hg": [
+    "hg",
+    "high-grade"
+   ],
+   "hm": [
+    "(^| )hm",
+    "heavy missile"
+   ],
+   "hml": [
+    "hml",
+    "(?<!rapid )heavy missile (launcher|bay)"
+   ],
+   "hs": [
+    "hs",
+    "heat sink"
+   ],
+   "hvy": [
+    "hvy",
+    "heavy"
+   ],
+   "hwd": [
+    "hwd",
+    "heavy warp disruptor"
+   ],
+   "hws": [
+    "hws",
+    "heavy warp scrambler"
+   ],
+   "in": [
+    "(^| )in",
+    "imperial navy"
+   ],
+   "infinipoint": [
+    "infinipoint",
+    "warp disruption field generator",
+    "^focused warp disruption script",
+    "^focused warp scrambling script"
+   ],
+   "infiniscram": [
+    "infiniscram",
+    "warp disruption field generator",
+    "^focused warp disruption script",
+    "^focused warp scrambling script"
+   ],
+   "inj": [
+    "inj",
+    "capacitor booster"
+   ],
+   "injector": [
+    "injector",
+    "capacitor booster"
+   ],
+   "inv": [
+    "inv",
+    "multispectrum shield hardener"
+   ],
+   "invul": [
+    "invul",
+    "multispectrum shield hardener"
+   ],
+   "invuln": [
+    "invuln",
+    "multispectrum shield hardener"
+   ],
+   "invulnerability": [
+    "invulnerability",
+    "multispectrum shield hardener"
+   ],
+   "ir": [
+    "(^| )ir",
+    "infrared"
+   ],
+   "isa": [
+    "isa",
+    "integrated sensor array"
+   ],
+   "istab": [
+    "istab",
+    "inertial stabilizer"
+   ],
+   "jam": [
+    "jam",
+    "ecm",
+    "ec-\\d00",
+    "lockbreaker bomb"
+   ],
+   "jamm": [
+    "jamm",
+    "ecm",
+    "ec-\\d00",
+    "lockbreaker bomb"
+   ],
+   "jammer": [
+    "jammer",
+    "ecm",
+    "ec-\\d00"
+   ],
+   "jde": [
+    "jde",
+    "jump drive economizer"
+   ],
+   "kin": [
+    "kin",
+    "scourge (.+ )?(missile|rocket|torpedo)",
+    "concussion bomb"
+   ],
+   "kinet": [
+    "kinet",
+    "scourge (.+ )?(missile|rocket|torpedo)",
+    "concussion bomb"
+   ],
+   "kinetic": [
+    "kinetic",
+    "scourge (.+ )?(missile|rocket|torpedo)",
+    "concussion bomb"
+   ],
+   "laar": [
+    "laar",
+    "large ancillary (.+ )?(?<!remote )armor repairer"
+   ],
+   "lar": [
+    "lar",
+    "large (.+ )?(?<!remote )armor repairer"
+   ],
+   "larsb": [
+    "larsb",
+    "large ancillary remote shield booster"
+   ],
+   "lasb": [
+    "lasb",
+    "(?<!x-)large ancillary (.+ )?(?<!remote )shield booster"
+   ],
+   "let": [
+    "(^| )let",
+    "large (.+ )?remote capacitor transmitter"
+   ],
+   "lg": [
+    "lg",
+    "low-grade"
+   ],
+   "lm": [
+    "(^| )lm",
+    "light missile"
+   ],
+   "lmjd": [
+    "lmjd",
+    "large micro jump drive"
+   ],
+   "lml": [
+    "lml",
+    "(?<!rapid )light missile (launcher|bay)"
+   ],
+   "lo": [
+    "(^| )lo",
+    "liquid ozone"
+   ],
+   "lraar": [
+    "lraar",
+    "large ancillary remote armor repairer"
+   ],
+   "lrar": [
+    "lrar",
+    "large (.+ )?remote armor repairer",
+    "heavy (.+ )?armor maintenance bot"
+   ],
+   "lrasb": [
+    "lrasb",
+    "large ancillary remote shield booster"
+   ],
+   "lrct": [
+    "lrct",
+    "large (.+ )?remote capacitor transmitter"
+   ],
+   "lret": [
+    "lret",
+    "large (.+ )?remote capacitor transmitter"
+   ],
+   "lrg": [
+    "lrg",
+    "large"
+   ],
+   "lrr": [
+    "lrr",
+    "large (.+ )?remote shield booster",
+    "large (.+ )?remote (armor|hull) repairer",
+    "heavy (.+ )?maintenance bot"
+   ],
+   "lrsb": [
+    "lrsb",
+    "large (.+ )?remote shield booster",
+    "heavy shield maintenance bot"
+   ],
+   "lsb": [
+    "lsb",
+    "(?<!x-)large (.+ )?(?<!remote )shield booster"
+   ],
+   "lse": [
+    "(^| )lse",
+    "large (.+ )?shield extender"
+   ],
+   "maar": [
+    "maar",
+    "medium ancillary (.+ )?(?<!remote )armor repairer"
+   ],
+   "magstab": [
+    "magstab",
+    "magnetic field stabilizer"
+   ],
+   "mapc": [
+    "mapc",
+    "micro auxiliary power core"
+   ],
+   "mar": [
+    "medium (.+ )?(?<!remote )armor repairer"
+   ],
+   "marsb": [
+    "marsb",
+    "medium ancillary remote shield booster"
+   ],
+   "masb": [
+    "masb",
+    "medium ancillary (.+ )?(?<!remote )shield booster"
+   ],
+   "mc": [
+    "mc",
+    "multispectrum coating"
+   ],
+   "mem": [
+    "mem",
+    "multispectrum energized membrane"
+   ],
+   "met": [
+    "(^| )met",
+    "medium (.+ )?remote capacitor transmitter"
+   ],
+   "mf": [
+    "mf",
+    "multifrequency"
+   ],
+   "mfs": [
+    "mfs",
+    "magnetic field stabilizer"
+   ],
+   "mg": [
+    "mg",
+    "mid-grade"
+   ],
+   "mgc": [
+    "mgc",
+    "missile guidance computer",
+    "missile (precision|range) script"
+   ],
+   "mge": [
+    "mge",
+    "missile guidance enhancer"
+   ],
+   "minmatar": [
+    "minmatar",
+    "ladar"
+   ],
+   "mjd": [
+    "mjd",
+    "micro jump drive",
+    "micro jump field generator",
+    "micro jump unit"
+   ],
+   "mjfg": [
+    "mjfg",
+    "micro jump field generator"
+   ],
+   "mju": [
+    "mju",
+    "micro jump unit"
+   ],
+   "mk": [
+    "mk",
+    "mark"
+   ],
+   "ml": [
+    "ml",
+    "missile (launcher|bay)"
+   ],
+   "mlu": [
+    "mlu",
+    "(mining laser|harvester) upgrade"
+   ],
+   "mmjd": [
+    "mmjd",
+    "medium micro jump drive"
+   ],
+   "mmju": [
+    "mmju",
+    "mobile micro jump unit"
+   ],
+   "mraar": [
+    "mraar",
+    "medium ancillary remote armor repairer"
+   ],
+   "mrar": [
+    "mrar",
+    "medium (.+ )?remote armor repairer",
+    "heavy mutadaptive (.+ )?remote armor repairer",
+    "medium (.+ )?armor maintenance bot"
+   ],
+   "mrasb": [
+    "mrasb",
+    "medium ancillary remote shield booster"
+   ],
+   "mrct": [
+    "mrct",
+    "medium (.+ )?remote capacitor transmitter"
+   ],
+   "mret": [
+    "mret",
+    "medium (.+ )?remote capacitor transmitter"
+   ],
+   "mrr": [
+    "mrr",
+    "medium (.+ )?remote shield booster",
+    "medium (.+ )?remote (armor|hull) repairer",
+    "heavy mutadaptive (.+ )?remote armor repairer",
+    "medium (.+ )?maintenance bot"
+   ],
+   "mrsb": [
+    "mrsb",
+    "medium (.+ )?remote shield booster",
+    "medium shield maintenance bot"
+   ],
+   "ms": [
+    "(^| )ms",
+    "magnetic field stabilizer"
+   ],
+   "msb": [
+    "msb",
+    "medium (.+ )?(?<!remote )shield booster"
+   ],
+   "mse": [
+    "mse",
+    "medium (.+ )?shield extender"
+   ],
+   "mtu": [
+    "mtu",
+    "mobile tractor unit"
+   ],
+   "mw": [
+    "mw",
+    "microwave"
+   ],
+   "mwd": [
+    "mwd",
+    "microwarpdrive"
+   ],
+   "ncb": [
+    "ncb",
+    "navy cap booster \\d+"
+   ],
+   "neut": [
+    "neutralizer",
+    "neutralization",
+    "ev-\\d00",
+    "void bomb"
+   ],
+   "neutraliser": [
+    "neutraliser",
+    "neutralizer",
+    "neutralization",
+    "ev-\\d00"
+   ],
+   "neutralizer": [
+    "neutralizer",
+    "neutralization",
+    "ev-\\d00"
+   ],
+   "np": [
+    "(^| )np",
+    "nanite repair paste"
+   ],
+   "nrp": [
+    "nrp",
+    "nanite repair paste"
+   ],
+   "nsa": [
+    "nsa",
+    "networked sensor array"
+   ],
+   "od": [
+    "(^| )od",
+    "overdrive injector"
+   ],
+   "odi": [
+    "(^| )odi",
+    "overdrive injector"
+   ],
+   "odtc": [
+    "odtc",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "odte": [
+    "odte",
+    "omnidirectional tracking enhancer"
+   ],
+   "odtl": [
+    "odtl",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "otc": [
+    "otc",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "ote": [
+    "(^| )ote",
+    "omnidirectional tracking enhancer"
+   ],
+   "otl": [
+    "otl",
+    "omnidirectional tracking link",
+    "(optimal range|tracking speed) script"
+   ],
+   "paint": [
+    "paint",
+    "target illumination"
+   ],
+   "painter": [
+    "painter",
+    "target illumination"
+   ],
+   "panic": [
+    "pulse activated nexus invulnerability core"
+   ],
+   "pdb": [
+    "pdb",
+    "point defense battery"
+   ],
+   "pds": [
+    "pds",
+    "power diagnostic system",
+    "point defense battery"
+   ],
+   "pdu": [
+    "pdu",
+    "power diagnostic system"
+   ],
+   "plating": [
+    "plating",
+    "coating"
+   ],
+   "point": [
+    "(^| )point",
+    "(?<!mobile small )(?<!mobile medium )(?<!mobile large )warp disruptor"
+   ],
+   "pp": [
+    "(^| )pp",
+    "phased plasma"
+   ],
+   "raar": [
+    "raar",
+    "ancillary remote armor repairer"
+   ],
+   "radsink": [
+    "radsink",
+    "entropic radiation sink"
+   ],
+   "rah": [
+    "rah",
+    "reactive armor hardener"
+   ],
+   "rar": [
+    "rar",
+    "remote armor repairer"
+   ],
+   "rasb": [
+    "rasb",
+    "ancillary remote shield booster"
+   ],
+   "rcs": [
+    "rcs",
+    "reactor control unit"
+   ],
+   "rct": [
+    "rct",
+    "remote capacitor transmitter"
+   ],
+   "rcu": [
+    "rcu",
+    "reactor control unit",
+    "reactor control unit"
+   ],
+   "reccm": [
+    "reccm",
+    "remote sensor booster",
+    "eccm script"
+   ],
+   "red": [
+    "red",
+    "ladar"
+   ],
+   "resebo": [
+    "resebo",
+    "remote sensor booster",
+    "(targeting range|scan resolution|eccm) script"
+   ],
+   "ret": [
+    "(^| )ret",
+    "remote capacitor transmitter"
+   ],
+   "rf": [
+    "(^| )rf",
+    "republic fleet"
+   ],
+   "rhml": [
+    "rhml",
+    "rapid heavy missile (launcher|bay)"
+   ],
+   "rl": [
+    "rl",
+    "rocket (launcher|bay)"
+   ],
+   "rlml": [
+    "rlml",
+    "rapid light missile (launcher|bay)"
+   ],
+   "rr": [
+    "(^| )rr",
+    "remote shield booster",
+    "remote (armor|hull) repairer",
+    "maintenance bot"
+   ],
+   "rs": [
+    "(^| )rs",
+    "entropic radiation sink"
+   ],
+   "rsb": [
+    "rsb",
+    "remote shield booster",
+    "shield maintenance bot",
+    "remote sensor booster",
+    "(targeting range|scan resolution|eccm) script"
+   ],
+   "rsd": [
+    "rsd",
+    "sensor dampener",
+    "sd-\\d00",
+    "(targeting range|scan resolution) dampening script"
+   ],
+   "rsebo": [
+    "rsebo",
+    "remote sensor booster",
+    "(targeting range|scan resolution|eccm) script"
+   ],
+   "rtc": [
+    "rtc",
+    "remote tracking computer",
+    "(optimal range|tracking speed) script"
+   ],
+   "rtl": [
+    "rtl",
+    "rapid torpedo (launcher|bay)",
+    "remote tracking computer",
+    "(optimal range|tracking speed) script"
+   ],
+   "sa": [
+    "signal amplifier"
+   ],
+   "saar": [
+    "saar",
+    "small ancillary (.+ )?(?<!remote )armor repairer"
+   ],
+   "sar": [
+    "(^| )sar",
+    "small (.+ )?(?<!remote )armor repairer"
+   ],
+   "sarsb": [
+    "sarsb",
+    "small ancillary remote shield booster"
+   ],
+   "sasb": [
+    "sasb",
+    "small ancillary (.+ )?(?<!remote )shield booster"
+   ],
+   "sb": [
+    "sb",
+    "smartbomb",
+    "(?<!remote )shield booster",
+    "(?<!remote )sensor booster",
+    "(targeting range|scan resolution|eccm) script"
+   ],
+   "sba": [
+    "sba",
+    "shield boost amplifier"
+   ],
+   "sbomb": [
+    "sbomb",
+    "smartbomb"
+   ],
+   "scan": [
+    "scan",
+    "probe launcher"
+   ],
+   "scanner": [
+    "scanner",
+    "probe launcher"
+   ],
+   "sd": [
+    "(^| )sd",
+    "sensor dampener",
+    "(targeting range|scan resolution) dampening script"
+   ],
+   "sda": [
+    "sda",
+    "signal distortion amplifier"
+   ],
+   "se": [
+    "(^| )se-",
+    "shield extender"
+   ],
+   "sebo": [
+    "sebo",
+    "(?<!remote )sensor booster",
+    "(targeting range|scan resolution|eccm) script"
+   ],
+   "set": [
+    "(^| )set",
+    "small (.+ )?remote capacitor transmitter"
+   ],
+   "sg": [
+    "sg",
+    "stasis grappler"
+   ],
+   "shieldrech": [
+    "shieldrech",
+    "shield recharger"
+   ],
+   "siege": [
+    "siege",
+    "bastion module",
+    "industrial core",
+    "triage module"
+   ],
+   "sigamp": [
+    "sigamp",
+    "signal amplifier"
+   ],
+   "slave": [
+    "slave",
+    "amulet"
+   ],
+   "smc": [
+    "smc",
+    "semiconductor memory cell"
+   ],
+   "sml": [
+    "sml",
+    "small"
+   ],
+   "spr": [
+    "spr",
+    "shield power relay"
+   ],
+   "sraar": [
+    "sraar",
+    "small ancillary remote armor repairer"
+   ],
+   "srar": [
+    "srar",
+    "small (.+ )?remote armor repairer",
+    "light (.+ )?armor maintenance bot"
+   ],
+   "srasb": [
+    "srasb",
+    "small ancillary remote shield booster"
+   ],
+   "srct": [
+    "srct",
+    "small (.+ )?remote capacitor transmitter"
+   ],
+   "sret": [
+    "sret",
+    "small (.+ )?remote capacitor transmitter"
+   ],
+   "srr": [
+    "srr",
+    "small (.+ )?remote shield booster",
+    "small (.+ )?remote (armor|hull) repairer",
+    "light (.+ )? maintenance bot"
+   ],
+   "srs": [
+    "srs",
+    "signature radius suppressor"
+   ],
+   "srsb": [
+    "srsb",
+    "small (.+ )?remote shield booster",
+    "light shield maintenance bot"
+   ],
+   "ss": [
+    "(^| )ss",
+    "shadow serpentis"
+   ],
+   "ssb": [
+    "ssb",
+    "small (.+ )?(?<!remote )shield booster"
+   ],
+   "sse": [
+    "(^| )sse",
+    "small (.+ )?shield extender"
+   ],
+   "stabiliser": [
+    "stabiliser",
+    "stabilizer"
+   ],
+   "std": [
+    "std",
+    "standard"
+   ],
+   "stick": [
+    "stick",
+    "cap booster \\d+"
+   ],
+   "sw": [
+    "sw",
+    "stasis webifier",
+    "stasis grappler"
+   ],
+   "t1": [
+    "t1",
+    " I$"
+   ],
+   "t2": [
+    "t2",
+    " II$"
+   ],
+   "tc": [
+    "tc",
+    "(?<!remote )tracking computer",
+    "(optimal range|tracking speed) script"
+   ],
+   "td": [
+    "td",
+    "tracking disrupt",
+    "weapon disrupt",
+    "(optimal range|tracking speed) disruption script"
+   ],
+   "te": [
+    "(?<!omnidirectional )tracking enhancer"
+   ],
+   "therm": [
+    "therm",
+    "inferno (.+ )?(missile|rocket|torpedo)",
+    "plasma smartbomb",
+    "scorch bomb"
+   ],
+   "thermal": [
+    "thermal",
+    "inferno (.+ )?(missile|rocket|torpedo)",
+    "plasma smartbomb",
+    "scorch bomb"
+   ],
+   "tl": [
+    "(^| )tl",
+    "(?<!rapid )(?<!XL )torpedo (launcher|bay)",
+    "remote tracking computer",
+    "(optimal range|tracking speed) script"
+   ],
+   "tp": [
+    "(^| )tp",
+    "target painter",
+    "target illumination",
+    "tp-\\d00"
+   ],
+   "ts": [
+    "(^| )ts",
+    "true sansha",
+    "titanium sabot"
+   ],
+   "uv": [
+    "(^| )uv",
+    "ultraviolet"
+   ],
+   "uw": [
+    "uw",
+    "microwave"
+   ],
+   "vts": [
+    "vts",
+    "vorton tuning system"
+   ],
+   "wcs": [
+    "wcs",
+    "warp core stabilizer"
+   ],
+   "wd": [
+    "wd",
+    "weapon disrupt",
+    "tracking disrupt",
+    "guidance disrupt",
+    "td-\\d00",
+    "(?<!mobile small )(?<!mobile medium )(?<!mobile large )(?<!heavy )warp disruptor"
+   ],
+   "wdfg": [
+    "wdfg",
+    "warp disruption field generator",
+    "^focused warp disruption script",
+    "^focused warp scrambling script"
+   ],
+   "web": [
+    "web",
+    "grappler",
+    "sw-\\d00"
+   ],
+   "webifier": [
+    "webifier",
+    "grappler",
+    "sw-\\d00"
+   ],
+   "ws": [
+    "ws",
+    "(?<!heavy )warp scrambler"
+   ],
+   "wstab": [
+    "wstab",
+    "warp core stabilizer"
+   ],
+   "wub": [
+    "wub",
+    "stasis webification probe",
+    "interdiction sphere launcher"
+   ],
+   "wubble": [
+    "wubble",
+    "stasis webification probe",
+    "interdiction sphere launcher"
+   ],
+   "x\\-ray": [
+    "x-ray",
+    "xray"
+   ],
+   "xl": [
+    "xl",
+    "x-large"
+   ],
+   "xlasb": [
+    "xlasb",
+    "x-large ancillary (.+ )?(?<!remote )shield booster"
+   ],
+   "xlcm": [
+    "xlcm",
+    "xl cruise missile"
+   ],
+   "xlcml": [
+    "xlcml",
+    "xl cruise missile (launcher|bay)"
+   ],
+   "xlsb": [
+    "xlsb",
+    "x-large (.+ )?(?<!remote )shield booster"
+   ],
+   "xltl": [
+    "xltl",
+    "xl torpedo (launcher|bay)"
+   ],
+   "yellow": [
+    "yellow",
+    "radar"
+   ],
+   "zpme": [
+    "zpme",
+    "zero-point mass entangler"
+   ]
+  },
+  "license": {
+   "id": "GPL-3.0-or-later",
+   "text": "Pyfa (c) Pyfa contributors, GNU GPL v3 or later (Pyfa LICENSE)"
+  },
+  "note": "key -> [regex patterns...]; the last pattern is the replacement in Pyfa's jargon semantics (single-item lists: the key itself is the pattern)",
+  "provenance": {
+   "commit": "1d9f72b71e6f218eadc494b3a0679f51692c89ea",
+   "file": "service/jargon/defaults.yaml",
+   "repo": "https://github.com/pyfa-org/Pyfa"
+  }
+ },
+ "notice": "Data tables extracted from Pyfa as data only (no code). Copyleft licences apply to this file: keep it separate from MIT/CCP-licensed outputs and comply with LGPL/GPL when redistributing.",
+ "target_profiles": {
+  "items": [
+   {
+    "em": 0.25,
+    "explosive": 0.25,
+    "kinetic": 0.25,
+    "name": "Uniform (25%)",
+    "pyfa_id": -1,
+    "thermal": 0.25
+   },
+   {
+    "em": 0.5,
+    "explosive": 0.5,
+    "kinetic": 0.5,
+    "name": "Uniform (50%)",
+    "pyfa_id": -2,
+    "thermal": 0.5
+   },
+   {
+    "em": 0.75,
+    "explosive": 0.75,
+    "kinetic": 0.75,
+    "name": "Uniform (75%)",
+    "pyfa_id": -3,
+    "thermal": 0.75
+   },
+   {
+    "em": 0.9,
+    "explosive": 0.9,
+    "kinetic": 0.9,
+    "name": "Uniform (90%)",
+    "pyfa_id": -4,
+    "thermal": 0.9
+   },
+   {
+    "em": 0.0,
+    "explosive": 0.5,
+    "kinetic": 0.4,
+    "name": "[T1 Resist]Shield",
+    "pyfa_id": -5,
+    "thermal": 0.2
+   },
+   {
+    "em": 0.5,
+    "explosive": 0.1,
+    "kinetic": 0.25,
+    "name": "[T1 Resist]Armor",
+    "pyfa_id": -6,
+    "thermal": 0.45
+   },
+   {
+    "em": 0.33,
+    "explosive": 0.33,
+    "kinetic": 0.33,
+    "name": "[T1 Resist]Hull",
+    "pyfa_id": -7,
+    "thermal": 0.33
+   },
+   {
+    "em": 0.125,
+    "explosive": 0.562,
+    "kinetic": 0.475,
+    "name": "[T1 Resist]Shield (+T2 DCU)",
+    "pyfa_id": -8,
+    "thermal": 0.3
+   },
+   {
+    "em": 0.575,
+    "explosive": 0.235,
+    "kinetic": 0.363,
+    "name": "[T1 Resist]Armor (+T2 DCU)",
+    "pyfa_id": -9,
+    "thermal": 0.532
+   },
+   {
+    "em": 0.598,
+    "explosive": 0.598,
+    "kinetic": 0.598,
+    "name": "[T1 Resist]Hull (+T2 DCU)",
+    "pyfa_id": -10,
+    "thermal": 0.598
+   },
+   {
+    "em": 0.0,
+    "explosive": 0.875,
+    "kinetic": 0.7,
+    "name": "[T2 Resist]Amarr (Shield)",
+    "pyfa_id": -11,
+    "thermal": 0.2
+   },
+   {
+    "em": 0.5,
+    "explosive": 0.8,
+    "kinetic": 0.625,
+    "name": "[T2 Resist]Amarr (Armor)",
+    "pyfa_id": -12,
+    "thermal": 0.35
+   },
+   {
+    "em": 0.2,
+    "explosive": 0.6,
+    "kinetic": 0.76,
+    "name": "[T2 Resist]Caldari (Shield)",
+    "pyfa_id": -13,
+    "thermal": 0.84
+   },
+   {
+    "em": 0.5,
+    "explosive": 0.1,
+    "kinetic": 0.625,
+    "name": "[T2 Resist]Caldari (Armor)",
+    "pyfa_id": -14,
+    "thermal": 0.8625
+   },
+   {
+    "em": 0.0,
+    "explosive": 0.5,
+    "kinetic": 0.85,
+    "name": "[T2 Resist]Gallente (Shield)",
+    "pyfa_id": -15,
+    "thermal": 0.6
+   },
+   {
+    "em": 0.5,
+    "explosive": 0.1,
+    "kinetic": 0.8375,
+    "name": "[T2 Resist]Gallente (Armor)",
+    "pyfa_id": -16,
+    "thermal": 0.675
+   },
+   {
+    "em": 0.75,
+    "explosive": 0.5,
+    "kinetic": 0.4,
+    "name": "[T2 Resist]Minmatar (Shield)",
+    "pyfa_id": -17,
+    "thermal": 0.6
+   },
+   {
+    "em": 0.9,
+    "explosive": 0.1,
+    "kinetic": 0.25,
+    "name": "[T2 Resist]Minmatar (Armor)",
+    "pyfa_id": -18,
+    "thermal": 0.675
+   },
+   {
+    "em": 0.54,
+    "explosive": 0.32,
+    "kinetic": 0.37,
+    "name": "[NPC][Asteroid]Angel Cartel",
+    "pyfa_id": -19,
+    "thermal": 0.42
+   },
+   {
+    "em": 0.34,
+    "explosive": 0.52,
+    "kinetic": 0.45,
+    "name": "[NPC][Asteroid]Blood Raiders",
+    "pyfa_id": -20,
+    "thermal": 0.39
+   },
+   {
+    "em": 0.55,
+    "explosive": 0.48,
+    "kinetic": 0.3,
+    "name": "[NPC][Asteroid]Guristas",
+    "pyfa_id": -21,
+    "thermal": 0.35
+   },
+   {
+    "em": 0.35,
+    "explosive": 0.49,
+    "kinetic": 0.44,
+    "name": "[NPC][Asteroid]Rogue Drones",
+    "pyfa_id": -22,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.35,
+    "explosive": 0.53,
+    "kinetic": 0.47,
+    "name": "[NPC][Asteroid]Sanshas Nation",
+    "pyfa_id": -23,
+    "thermal": 0.4
+   },
+   {
+    "em": 0.49,
+    "explosive": 0.51,
+    "kinetic": 0.29,
+    "name": "[NPC][Asteroid]Serpentis",
+    "pyfa_id": -24,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.59,
+    "explosive": 0.32,
+    "kinetic": 0.4,
+    "name": "[NPC][Deadspace]Angel Cartel",
+    "pyfa_id": -25,
+    "thermal": 0.48
+   },
+   {
+    "em": 0.31,
+    "explosive": 0.56,
+    "kinetic": 0.47,
+    "name": "[NPC][Deadspace]Blood Raiders",
+    "pyfa_id": -26,
+    "thermal": 0.39
+   },
+   {
+    "em": 0.57,
+    "explosive": 0.5,
+    "kinetic": 0.31,
+    "name": "[NPC][Deadspace]Guristas",
+    "pyfa_id": -27,
+    "thermal": 0.39
+   },
+   {
+    "em": 0.42,
+    "explosive": 0.49,
+    "kinetic": 0.47,
+    "name": "[NPC][Deadspace]Rogue Drones",
+    "pyfa_id": -28,
+    "thermal": 0.42
+   },
+   {
+    "em": 0.31,
+    "explosive": 0.56,
+    "kinetic": 0.47,
+    "name": "[NPC][Deadspace]Sanshas Nation",
+    "pyfa_id": -29,
+    "thermal": 0.39
+   },
+   {
+    "em": 0.49,
+    "explosive": 0.56,
+    "kinetic": 0.29,
+    "name": "[NPC][Deadspace]Serpentis",
+    "pyfa_id": -30,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.34,
+    "explosive": 0.46,
+    "kinetic": 0.42,
+    "name": "[NPC][Mission]Amarr Empire",
+    "pyfa_id": -31,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.51,
+    "explosive": 0.51,
+    "kinetic": 0.3,
+    "name": "[NPC][Mission]Caldari State",
+    "pyfa_id": -32,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.47,
+    "explosive": 0.47,
+    "kinetic": 0.47,
+    "name": "[NPC][Mission]CONCORD",
+    "pyfa_id": -33,
+    "thermal": 0.46
+   },
+   {
+    "em": 0.51,
+    "explosive": 0.52,
+    "kinetic": 0.31,
+    "name": "[NPC][Mission]Gallente Federation",
+    "pyfa_id": -34,
+    "thermal": 0.38
+   },
+   {
+    "em": 0.51,
+    "explosive": 0.4,
+    "kinetic": 0.36,
+    "name": "[NPC][Mission]Khanid",
+    "pyfa_id": -35,
+    "thermal": 0.42
+   },
+   {
+    "em": 0.51,
+    "explosive": 0.35,
+    "kinetic": 0.41,
+    "name": "[NPC][Mission]Minmatar Republic",
+    "pyfa_id": -36,
+    "thermal": 0.46
+   },
+   {
+    "em": 0.32,
+    "explosive": 0.62,
+    "kinetic": 0.4,
+    "name": "[NPC][Mission]Mordus Legion",
+    "pyfa_id": -37,
+    "thermal": 0.48
+   },
+   {
+    "em": 0.61,
+    "explosive": 0.61,
+    "kinetic": 0.61,
+    "name": "[NPC][Other]Sleeper",
+    "pyfa_id": -38,
+    "thermal": 0.61
+   },
+   {
+    "em": 0.65,
+    "explosive": 0.65,
+    "kinetic": 0.64,
+    "name": "[NPC][Other]Sansha Incursion",
+    "pyfa_id": -39,
+    "thermal": 0.63
+   },
+   {
+    "em": 0.575,
+    "explosive": 0.235,
+    "kinetic": 0.862,
+    "max_velocity": 1020,
+    "name": "[NPC][Burner][Team]Enyo",
+    "pyfa_id": -40,
+    "radius": 39,
+    "signature_radius": 37,
+    "thermal": 0.724
+   },
+   {
+    "em": 0.681,
+    "explosive": 0.49,
+    "kinetic": 0.522,
+    "max_velocity": 870,
+    "name": "[NPC][Burner][Team]Navitas",
+    "pyfa_id": -41,
+    "radius": 35,
+    "signature_radius": 30,
+    "thermal": 0.586
+   },
+   {
+    "em": 0.3,
+    "explosive": 0.65,
+    "kinetic": 0.79,
+    "max_velocity": 1122,
+    "name": "[NPC][Burner][Team]Hawk",
+    "pyfa_id": -42,
+    "radius": 39,
+    "signature_radius": 48,
+    "thermal": 0.86
+   },
+   {
+    "em": 0.344,
+    "explosive": 0.672,
+    "kinetic": 0.606,
+    "max_velocity": 1016,
+    "name": "[NPC][Burner][Team]Bantam",
+    "pyfa_id": -43,
+    "radius": 27,
+    "signature_radius": 45,
+    "thermal": 0.475
+   },
+   {
+    "em": 0.781,
+    "explosive": 0.563,
+    "kinetic": 0.475,
+    "max_velocity": 1400,
+    "name": "[NPC][Burner][Team]Jaguar",
+    "pyfa_id": -44,
+    "radius": 31,
+    "signature_radius": 42,
+    "thermal": 0.65
+   },
+   {
+    "em": 0.344,
+    "explosive": 0.672,
+    "kinetic": 0.606,
+    "max_velocity": 1174,
+    "name": "[NPC][Burner][Team]Burst",
+    "pyfa_id": -45,
+    "radius": 31,
+    "signature_radius": 39,
+    "thermal": 0.475
+   },
+   {
+    "em": 0.66,
+    "explosive": 0.864,
+    "kinetic": 0.745,
+    "max_velocity": 1050,
+    "name": "[NPC][Burner][Team]Vengeance",
+    "pyfa_id": -46,
+    "radius": 40,
+    "signature_radius": 37,
+    "thermal": 0.558
+   },
+   {
+    "em": 0.681,
+    "explosive": 0.49,
+    "kinetic": 0.522,
+    "max_velocity": 920,
+    "name": "[NPC][Burner][Team]Inquisitor",
+    "pyfa_id": -47,
+    "radius": 20.5,
+    "signature_radius": 29,
+    "thermal": 0.586
+   },
+   {
+    "em": 0.795,
+    "explosive": 0.672,
+    "kinetic": 0.693,
+    "max_velocity": 900,
+    "name": "[NPC][Burner]Cruor",
+    "pyfa_id": -48,
+    "radius": 20.5,
+    "signature_radius": 18,
+    "thermal": 0.734
+   },
+   {
+    "em": 0.351,
+    "explosive": 0.676,
+    "kinetic": 0.611,
+    "max_velocity": 2100,
+    "name": "[NPC][Burner]Dramiel",
+    "pyfa_id": -49,
+    "radius": 25,
+    "signature_radius": 11,
+    "thermal": 0.481
+   },
+   {
+    "em": 0.685,
+    "explosive": 0.433,
+    "kinetic": 0.59,
+    "max_velocity": 1200,
+    "name": "[NPC][Burner]Daredevil",
+    "pyfa_id": -50,
+    "radius": 25,
+    "signature_radius": 18,
+    "thermal": 0.59
+   },
+   {
+    "em": 0.351,
+    "explosive": 0.676,
+    "kinetic": 0.611,
+    "max_velocity": 4750,
+    "name": "[NPC][Burner]Succubus",
+    "pyfa_id": -51,
+    "radius": 59,
+    "signature_radius": 30,
+    "thermal": 0.481
+   },
+   {
+    "em": 0.475,
+    "explosive": 0.738,
+    "kinetic": 0.685,
+    "max_velocity": 360,
+    "name": "[NPC][Burner]Worm",
+    "pyfa_id": -52,
+    "radius": 39,
+    "signature_radius": 70,
+    "thermal": 0.58
+   },
+   {
+    "em": 0.8,
+    "explosive": 0.7,
+    "kinetic": 0.68,
+    "max_velocity": 500,
+    "name": "[NPC][Burner]Ashimmu",
+    "pyfa_id": -53,
+    "radius": 137,
+    "signature_radius": 120,
+    "thermal": 0.76
+   },
+   {
+    "em": 0.575,
+    "explosive": 0.66,
+    "kinetic": 0.522,
+    "max_velocity": 500,
+    "name": "[NPC][Burner]Sentinel",
+    "pyfa_id": -54,
+    "radius": 39,
+    "signature_radius": 50,
+    "thermal": 0.448
+   },
+   {
+    "em": 0.681,
+    "explosive": 0.426,
+    "kinetic": 0.586,
+    "max_velocity": 150,
+    "name": "[NPC][Burner]Talos",
+    "pyfa_id": -55,
+    "radius": 266,
+    "signature_radius": 125,
+    "thermal": 0.586
+   },
+   {
+    "em": 0.35,
+    "explosive": 0.55,
+    "kinetic": 0.7,
+    "max_velocity": 1200,
+    "name": "[NPC][Burner]Dragonfly",
+    "pyfa_id": -56,
+    "radius": 35,
+    "signature_radius": 15,
+    "thermal": 0.72
+   },
+   {
+    "em": 0.6,
+    "explosive": 0.71,
+    "kinetic": 0.71,
+    "max_velocity": 900,
+    "name": "[NPC][Burner]Mantis",
+    "pyfa_id": -57,
+    "radius": 35,
+    "signature_radius": 25,
+    "thermal": 0.52
+   },
+   {
+    "em": 0.422,
+    "explosive": 0.411,
+    "kinetic": 0.453,
+    "name": "[NPC][Invasion]Triglavian Entities",
+    "pyfa_id": -58,
+    "thermal": 0.367
+   },
+   {
+    "em": 0.36,
+    "explosive": 0.602,
+    "kinetic": 0.441,
+    "name": "[NPC][Invasion]Amarr EDENCOM Entities",
+    "pyfa_id": -59,
+    "thermal": 0.31
+   },
+   {
+    "em": 0.303,
+    "explosive": 0.401,
+    "kinetic": 0.487,
+    "name": "[NPC][Invasion]Caldari EDENCOM Entities",
+    "pyfa_id": -60,
+    "thermal": 0.61
+   },
+   {
+    "em": 0.383,
+    "explosive": 0.513,
+    "kinetic": 0.578,
+    "name": "[NPC][Invasion]Gallente EDENCOM Entities",
+    "pyfa_id": -61,
+    "thermal": 0.414
+   },
+   {
+    "em": 0.62,
+    "explosive": 0.399,
+    "kinetic": 0.355,
+    "name": "[NPC][Invasion]Minmatar EDENCOM Entities",
+    "pyfa_id": -62,
+    "thermal": 0.422
+   },
+   {
+    "em": 0.439,
+    "explosive": 0.435,
+    "kinetic": 0.529,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Drones",
+    "pyfa_id": -63,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.643,
+    "explosive": 0.639,
+    "kinetic": 0.624,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Overmind",
+    "pyfa_id": -64,
+    "thermal": 0.593
+   },
+   {
+    "em": 0.082,
+    "explosive": 0.082,
+    "kinetic": 0.082,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Seeker",
+    "pyfa_id": -65,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.494,
+    "explosive": 0.376,
+    "kinetic": 0.464,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Triglavian",
+    "pyfa_id": -66,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.415,
+    "explosive": 0.415,
+    "kinetic": 0.415,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Drifter",
+    "pyfa_id": -67,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.435,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Sleeper",
+    "pyfa_id": -68,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.508,
+    "explosive": 0.488,
+    "kinetic": 0.495,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]All",
+    "pyfa_id": -69,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.323,
+    "explosive": 0.435,
+    "kinetic": 0.529,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Drones",
+    "pyfa_id": -70,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.542,
+    "explosive": 0.639,
+    "kinetic": 0.624,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Overmind",
+    "pyfa_id": -71,
+    "thermal": 0.593
+   },
+   {
+    "em": 0,
+    "explosive": 0.082,
+    "kinetic": 0.082,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Seeker",
+    "pyfa_id": -72,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.356,
+    "explosive": 0.376,
+    "kinetic": 0.464,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Triglavian",
+    "pyfa_id": -73,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.277,
+    "explosive": 0.415,
+    "kinetic": 0.415,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Drifter",
+    "pyfa_id": -74,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.329,
+    "explosive": 0.435,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Sleeper",
+    "pyfa_id": -75,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.381,
+    "explosive": 0.488,
+    "kinetic": 0.495,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]All",
+    "pyfa_id": -76,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.255,
+    "explosive": 0.435,
+    "kinetic": 0.529,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Drones",
+    "pyfa_id": -77,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.48,
+    "explosive": 0.639,
+    "kinetic": 0.624,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Overmind",
+    "pyfa_id": -78,
+    "thermal": 0.593
+   },
+   {
+    "em": 0,
+    "explosive": 0.0822,
+    "kinetic": 0.082,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Seeker",
+    "pyfa_id": -79,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.268,
+    "explosive": 0.376,
+    "kinetic": 0.464,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Triglavian",
+    "pyfa_id": -80,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.191,
+    "explosive": 0.415,
+    "kinetic": 0.415,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Drifter",
+    "pyfa_id": -81,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.268,
+    "explosive": 0.435,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Sleeper",
+    "pyfa_id": -82,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.308,
+    "explosive": 0.488,
+    "kinetic": 0.495,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]All",
+    "pyfa_id": -83,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.193,
+    "explosive": 0.435,
+    "kinetic": 0.529,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Drones",
+    "pyfa_id": -84,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.423,
+    "explosive": 0.639,
+    "kinetic": 0.624,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Overmind",
+    "pyfa_id": -85,
+    "thermal": 0.593
+   },
+   {
+    "em": 0,
+    "explosive": 0.082,
+    "kinetic": 0.082,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Seeker",
+    "pyfa_id": -86,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.206,
+    "explosive": 0.376,
+    "kinetic": 0.464,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Triglavian",
+    "pyfa_id": -87,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.111,
+    "explosive": 0.415,
+    "kinetic": 0.415,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Drifter",
+    "pyfa_id": -88,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.215,
+    "explosive": 0.435,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Sleeper",
+    "pyfa_id": -89,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.247,
+    "explosive": 0.488,
+    "kinetic": 0.495,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]All",
+    "pyfa_id": -90,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.461,
+    "explosive": 0.443,
+    "kinetic": 0.541,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Drones",
+    "pyfa_id": -91,
+    "thermal": 0.425
+   },
+   {
+    "em": 0.666,
+    "explosive": 0.646,
+    "kinetic": 0.634,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Overmind",
+    "pyfa_id": -92,
+    "thermal": 0.489
+   },
+   {
+    "em": 0.084,
+    "explosive": 0.084,
+    "kinetic": 0.084,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Seeker",
+    "pyfa_id": -93,
+    "thermal": 0
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.371,
+    "kinetic": 0.489,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Triglavian",
+    "pyfa_id": -94,
+    "thermal": 0.269
+   },
+   {
+    "em": 0.43,
+    "explosive": 0.43,
+    "kinetic": 0.43,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Drifter",
+    "pyfa_id": -95,
+    "thermal": 0.289
+   },
+   {
+    "em": 0.512,
+    "explosive": 0.512,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Sleeper",
+    "pyfa_id": -96,
+    "thermal": 0.402
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.495,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]All",
+    "pyfa_id": -97,
+    "thermal": 0.352
+   },
+   {
+    "em": 0.461,
+    "explosive": 0.443,
+    "kinetic": 0.541,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Drones",
+    "pyfa_id": -98,
+    "thermal": 0.36
+   },
+   {
+    "em": 0.666,
+    "explosive": 0.646,
+    "kinetic": 0.634,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Overmind",
+    "pyfa_id": -99,
+    "thermal": 0.413
+   },
+   {
+    "em": 0.084,
+    "explosive": 0.084,
+    "kinetic": 0.084,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Seeker",
+    "pyfa_id": -100,
+    "thermal": 0
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.371,
+    "kinetic": 0.489,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Triglavian",
+    "pyfa_id": -101,
+    "thermal": 0.166
+   },
+   {
+    "em": 0.43,
+    "explosive": 0.43,
+    "kinetic": 0.43,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Drifter",
+    "pyfa_id": -102,
+    "thermal": 0.201
+   },
+   {
+    "em": 0.512,
+    "explosive": 0.512,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Sleeper",
+    "pyfa_id": -103,
+    "thermal": 0.337
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.495,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]All",
+    "pyfa_id": -104,
+    "thermal": 0.269
+   },
+   {
+    "em": 0.461,
+    "explosive": 0.443,
+    "kinetic": 0.541,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Drones",
+    "pyfa_id": -105,
+    "thermal": 0.305
+   },
+   {
+    "em": 0.666,
+    "explosive": 0.646,
+    "kinetic": 0.634,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Overmind",
+    "pyfa_id": -106,
+    "thermal": 0.345
+   },
+   {
+    "em": 0.084,
+    "explosive": 0.084,
+    "kinetic": 0.084,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Seeker",
+    "pyfa_id": -107,
+    "thermal": 0
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.371,
+    "kinetic": 0.489,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Triglavian",
+    "pyfa_id": -108,
+    "thermal": 0.085
+   },
+   {
+    "em": 0.43,
+    "explosive": 0.43,
+    "kinetic": 0.43,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Drifter",
+    "pyfa_id": -109,
+    "thermal": 0.117
+   },
+   {
+    "em": 0.512,
+    "explosive": 0.512,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Sleeper",
+    "pyfa_id": -110,
+    "thermal": 0.276
+   },
+   {
+    "em": 0.537,
+    "explosive": 0.495,
+    "kinetic": 0.512,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]All",
+    "pyfa_id": -111,
+    "thermal": 0.201
+   },
+   {
+    "em": 0.439,
+    "explosive": 0.435,
+    "kinetic": 0.417,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Drones",
+    "pyfa_id": -112,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.643,
+    "explosive": 0.639,
+    "kinetic": 0.511,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Overmind",
+    "pyfa_id": -113,
+    "thermal": 0.593
+   },
+   {
+    "em": 0.082,
+    "explosive": 0.082,
+    "kinetic": 0,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Seeker",
+    "pyfa_id": -114,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.494,
+    "explosive": 0.376,
+    "kinetic": 0.304,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Triglavian",
+    "pyfa_id": -115,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.415,
+    "explosive": 0.415,
+    "kinetic": 0.277,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Drifter",
+    "pyfa_id": -116,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.435,
+    "kinetic": 0.329,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Sleeper",
+    "pyfa_id": -117,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.508,
+    "explosive": 0.488,
+    "kinetic": 0.359,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]All",
+    "pyfa_id": -118,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.439,
+    "explosive": 0.435,
+    "kinetic": 0.351,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Drones",
+    "pyfa_id": -119,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.643,
+    "explosive": 0.639,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Overmind",
+    "pyfa_id": -120,
+    "thermal": 0.593
+   },
+   {
+    "em": 0.082,
+    "explosive": 0.082,
+    "kinetic": 0,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Seeker",
+    "pyfa_id": -121,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.494,
+    "explosive": 0.376,
+    "kinetic": 0.198,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Triglavian",
+    "pyfa_id": -122,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.415,
+    "explosive": 0.415,
+    "kinetic": 0.191,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Drifter",
+    "pyfa_id": -123,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.435,
+    "kinetic": 0.268,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Sleeper",
+    "pyfa_id": -124,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.508,
+    "explosive": 0.488,
+    "kinetic": 0.276,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]All",
+    "pyfa_id": -125,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.439,
+    "explosive": 0.435,
+    "kinetic": 0.293,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Drones",
+    "pyfa_id": -126,
+    "thermal": 0.522
+   },
+   {
+    "em": 0.643,
+    "explosive": 0.639,
+    "kinetic": 0.362,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Overmind",
+    "pyfa_id": -127,
+    "thermal": 0.593
+   },
+   {
+    "em": 0.082,
+    "explosive": 0.082,
+    "kinetic": 0,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Seeker",
+    "pyfa_id": -128,
+    "thermal": 0.082
+   },
+   {
+    "em": 0.494,
+    "explosive": 0.376,
+    "kinetic": 0.122,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Triglavian",
+    "pyfa_id": -129,
+    "thermal": 0.41
+   },
+   {
+    "em": 0.415,
+    "explosive": 0.415,
+    "kinetic": 0.111,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Drifter",
+    "pyfa_id": -130,
+    "thermal": 0.415
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.435,
+    "kinetic": 0.215,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Sleeper",
+    "pyfa_id": -131,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.508,
+    "explosive": 0.488,
+    "kinetic": 0.208,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]All",
+    "pyfa_id": -132,
+    "thermal": 0.474
+   },
+   {
+    "em": 0.449,
+    "explosive": 0.336,
+    "kinetic": 0.549,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Drones",
+    "pyfa_id": -133,
+    "thermal": 0.54
+   },
+   {
+    "em": 0.619,
+    "explosive": 0.522,
+    "kinetic": 0.612,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Overmind",
+    "pyfa_id": -134,
+    "thermal": 0.574
+   },
+   {
+    "em": 0.085,
+    "explosive": 0,
+    "kinetic": 0.085,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Seeker",
+    "pyfa_id": -135,
+    "thermal": 0.085
+   },
+   {
+    "em": 0.477,
+    "explosive": 0.202,
+    "kinetic": 0.461,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Triglavian",
+    "pyfa_id": -136,
+    "thermal": 0.4
+   },
+   {
+    "em": 0.437,
+    "explosive": 0.295,
+    "kinetic": 0.437,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Drifter",
+    "pyfa_id": -137,
+    "thermal": 0.437
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.329,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Sleeper",
+    "pyfa_id": -138,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.493,
+    "explosive": 0.35,
+    "kinetic": 0.492,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]All",
+    "pyfa_id": -139,
+    "thermal": 0.468
+   },
+   {
+    "em": 0.449,
+    "explosive": 0.264,
+    "kinetic": 0.549,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Drones",
+    "pyfa_id": -140,
+    "thermal": 0.54
+   },
+   {
+    "em": 0.619,
+    "explosive": 0.449,
+    "kinetic": 0.612,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Overmind",
+    "pyfa_id": -141,
+    "thermal": 0.574
+   },
+   {
+    "em": 0.085,
+    "explosive": 0,
+    "kinetic": 0.085,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Seeker",
+    "pyfa_id": -142,
+    "thermal": 0.085
+   },
+   {
+    "em": 0.477,
+    "explosive": 0.081,
+    "kinetic": 0.461,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Triglavian",
+    "pyfa_id": -143,
+    "thermal": 0.4
+   },
+   {
+    "em": 0.437,
+    "explosive": 0.206,
+    "kinetic": 0.437,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Drifter",
+    "pyfa_id": -144,
+    "thermal": 0.437
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.268,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Sleeper",
+    "pyfa_id": -145,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.493,
+    "explosive": 0.264,
+    "kinetic": 0.492,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]All",
+    "pyfa_id": -146,
+    "thermal": 0.468
+   },
+   {
+    "em": 0.449,
+    "explosive": 0.197,
+    "kinetic": 0.549,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Drones",
+    "pyfa_id": -147,
+    "thermal": 0.54
+   },
+   {
+    "em": 0.619,
+    "explosive": 0.379,
+    "kinetic": 0.612,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Overmind",
+    "pyfa_id": -148,
+    "thermal": 0.574
+   },
+   {
+    "em": 0.085,
+    "explosive": 0,
+    "kinetic": 0.085,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Seeker",
+    "pyfa_id": -149,
+    "thermal": 0.085
+   },
+   {
+    "em": 0.477,
+    "explosive": 0.034,
+    "kinetic": 0.461,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Triglavian",
+    "pyfa_id": -150,
+    "thermal": 0.4
+   },
+   {
+    "em": 0.437,
+    "explosive": 0.121,
+    "kinetic": 0.437,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Drifter",
+    "pyfa_id": -151,
+    "thermal": 0.437
+   },
+   {
+    "em": 0.435,
+    "explosive": 0.215,
+    "kinetic": 0.435,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Sleeper",
+    "pyfa_id": -152,
+    "thermal": 0.435
+   },
+   {
+    "em": 0.493,
+    "explosive": 0.196,
+    "kinetic": 0.492,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]All",
+    "pyfa_id": -153,
+    "thermal": 0.468
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Concord",
+    "pyfa_id": -154,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.322,
+    "kinetic": 0.332,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Sansha",
+    "pyfa_id": -155,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.582,
+    "explosive": 0.416,
+    "kinetic": 0.457,
+    "name": "[NPC][Abyssal][Dark Matter All Tiers]Angel",
+    "pyfa_id": -156,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.121,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Concord",
+    "pyfa_id": -157,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.034,
+    "explosive": 0.322,
+    "kinetic": 0.332,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Sansha",
+    "pyfa_id": -158,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.456,
+    "explosive": 0.416,
+    "kinetic": 0.457,
+    "name": "[NPC][Abyssal][Electrical T0/T1/T2]Angel",
+    "pyfa_id": -159,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.025,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Concord",
+    "pyfa_id": -160,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.018,
+    "explosive": 0.322,
+    "kinetic": 0.332,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Sansha",
+    "pyfa_id": -161,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.373,
+    "explosive": 0.416,
+    "kinetic": 0.457,
+    "name": "[NPC][Abyssal][Electrical T3 (Some T5 Rooms)]Angel",
+    "pyfa_id": -162,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.008,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Concord",
+    "pyfa_id": -163,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.009,
+    "explosive": 0.322,
+    "kinetic": 0.332,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Sansha",
+    "pyfa_id": -164,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.3,
+    "explosive": 0.416,
+    "kinetic": 0.457,
+    "name": "[NPC][Abyssal][Electrical T4/T5/T6]Angel",
+    "pyfa_id": -165,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Concord",
+    "pyfa_id": -166,
+    "thermal": 0.107
+   },
+   {
+    "em": 0.148,
+    "explosive": 0.328,
+    "kinetic": 0.329,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Sansha",
+    "pyfa_id": -167,
+    "thermal": 0.181
+   },
+   {
+    "em": 0.587,
+    "explosive": 0.39,
+    "kinetic": 0.439,
+    "name": "[NPC][Abyssal][Firestorm T0/T1/T2]Angel",
+    "pyfa_id": -168,
+    "thermal": 0.342
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Concord",
+    "pyfa_id": -169,
+    "thermal": 0.016
+   },
+   {
+    "em": 0.148,
+    "explosive": 0.328,
+    "kinetic": 0.329,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Sansha",
+    "pyfa_id": -170,
+    "thermal": 0.14
+   },
+   {
+    "em": 0.587,
+    "explosive": 0.39,
+    "kinetic": 0.439,
+    "name": "[NPC][Abyssal][Firestorm T3 (Some T5 Rooms)]Angel",
+    "pyfa_id": -171,
+    "thermal": 0.241
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Concord",
+    "pyfa_id": -172,
+    "thermal": 0.004
+   },
+   {
+    "em": 0.148,
+    "explosive": 0.328,
+    "kinetic": 0.329,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Sansha",
+    "pyfa_id": -173,
+    "thermal": 0.106
+   },
+   {
+    "em": 0.587,
+    "explosive": 0.39,
+    "kinetic": 0.439,
+    "name": "[NPC][Abyssal][Firestorm T4/T5/T6]Angel",
+    "pyfa_id": -174,
+    "thermal": 0.172
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.18,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Concord",
+    "pyfa_id": -175,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.322,
+    "kinetic": 0.166,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Sansha",
+    "pyfa_id": -176,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.582,
+    "explosive": 0.416,
+    "kinetic": 0.295,
+    "name": "[NPC][Abyssal][Exotic T0/T1/T2]Angel",
+    "pyfa_id": -177,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.089,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Concord",
+    "pyfa_id": -178,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.322,
+    "kinetic": 0.108,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Sansha",
+    "pyfa_id": -179,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.582,
+    "explosive": 0.416,
+    "kinetic": 0.203,
+    "name": "[NPC][Abyssal][Exotic T3 (Some T5 Rooms)]Angel",
+    "pyfa_id": -180,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.372,
+    "kinetic": 0.068,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Concord",
+    "pyfa_id": -181,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.322,
+    "kinetic": 0.073,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Sansha",
+    "pyfa_id": -182,
+    "thermal": 0.331
+   },
+   {
+    "em": 0.582,
+    "explosive": 0.416,
+    "kinetic": 0.14,
+    "name": "[NPC][Abyssal][Exotic T4/T5/T6]Angel",
+    "pyfa_id": -183,
+    "thermal": 0.508
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.203,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Concord",
+    "pyfa_id": -184,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.16,
+    "kinetic": 0.352,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Sansha",
+    "pyfa_id": -185,
+    "thermal": 0.355
+   },
+   {
+    "em": 0.59,
+    "explosive": 0.286,
+    "kinetic": 0.477,
+    "name": "[NPC][Abyssal][Gamma T0/T1/T2]Angel",
+    "pyfa_id": -186,
+    "thermal": 0.528
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.112,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Concord",
+    "pyfa_id": -187,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0.05,
+    "kinetic": 0.352,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Sansha",
+    "pyfa_id": -188,
+    "thermal": 0.355
+   },
+   {
+    "em": 0.59,
+    "explosive": 0.197,
+    "kinetic": 0.477,
+    "name": "[NPC][Abyssal][Gamma T3 (Some T5 Rooms)]Angel",
+    "pyfa_id": -189,
+    "thermal": 0.528
+   },
+   {
+    "em": 0.324,
+    "explosive": 0.086,
+    "kinetic": 0.369,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Concord",
+    "pyfa_id": -190,
+    "thermal": 0.318
+   },
+   {
+    "em": 0.137,
+    "explosive": 0,
+    "kinetic": 0.352,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Sansha",
+    "pyfa_id": -191,
+    "thermal": 0.355
+   },
+   {
+    "em": 0.59,
+    "explosive": 0.126,
+    "kinetic": 0.477,
+    "name": "[NPC][Abyssal][Gamma T4/T5/T6]Angel",
+    "pyfa_id": -192,
+    "thermal": 0.528
+   },
+   {
+    "em": 0.128,
+    "explosive": 0.383,
+    "kinetic": 0.383,
+    "name": "[NPC][Invasion]Drifter Entities",
+    "pyfa_id": -193,
+    "thermal": 0.375
+   },
+   {
+    "em": 0.104,
+    "explosive": 0.102,
+    "kinetic": 0.147,
+    "name": "[NPC][Invasion]Rogue Drone Entities",
+    "pyfa_id": -194,
+    "thermal": 0.147
+   },
+   {
+    "em": 0.563,
+    "explosive": 0.563,
+    "kinetic": 0.563,
+    "name": "[NPC][Invasion]Sleeper Entities",
+    "pyfa_id": -195,
+    "thermal": 0.563
+   }
+  ],
+  "license": {
+   "id": "LGPL-2.1-or-later",
+   "text": "Pyfa eos (c) Diego Duclos and contributors, GNU LGPL v2.1 or later (file header of eos/saveddata/*.py)"
+  },
+  "provenance": {
+   "commit": "1d9f72b71e6f218eadc494b3a0679f51692c89ea",
+   "file": "eos/saveddata/targetProfile.py (BUILTINS)",
+   "repo": "https://github.com/pyfa-org/Pyfa"
+  }
+ }
+}

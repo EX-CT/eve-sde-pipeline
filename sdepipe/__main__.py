@@ -38,6 +38,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="sdepipe")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("latest", help="print latest TQ SDE build number")
+    tg = sub.add_parser("names", help="print release tag and dataset filename for a build (current revision)")
+    tg.add_argument("build", type=int)
     d = sub.add_parser("download"); d.add_argument("--build", default="latest"); d.add_argument("--dest", required=True)
     b = sub.add_parser("build"); b.add_argument("--sde", required=True); b.add_argument("--out", required=True)
     b.add_argument("--patches", default=os.path.join(os.path.dirname(__file__), "..", "patches"))
@@ -48,6 +50,10 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if args.cmd == "latest":
         print(latest_build())
+    elif args.cmd == "names":
+        from . import DATASET_REVISION
+        from .build import dataset_filename, release_tag
+        print(release_tag(args.build, DATASET_REVISION), dataset_filename(args.build, DATASET_REVISION))
     elif args.cmd == "download":
         bn = latest_build() if args.build == "latest" else int(args.build)
         download(bn, args.dest)

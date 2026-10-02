@@ -160,6 +160,8 @@ def main():
     ap.add_argument("--pyfa", required=True)
     ap.add_argument("--dataset", required=True)
     ap.add_argument("--engine-src", action="append", default=[])
+    ap.add_argument("--engine-names", help="JSON {names:[...], prefixes:[...]} snapshot (CI, engines are private)")
+    ap.add_argument("--dump-engine-names", help="write the engine names/prefixes found via --engine-src to this file")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     ds = json.load(gzip.open(a.dataset) if a.dataset.endswith(".gz") else open(a.dataset))
@@ -168,6 +170,13 @@ def main():
     for src in a.engine_src:
         n, pf = engine_names(src)
         eng |= n; prefixes |= pf
+    if a.engine_names:
+        snap = json.load(open(a.engine_names, encoding="utf-8"))
+        eng |= set(snap["names"]); prefixes |= set(snap["prefixes"])
+    if a.dump_engine_names:
+        effect_names = {e["name"] for e in ds["effects"].values()}
+        with open(a.dump_engine_names, "w", encoding="utf-8") as f:
+            json.dump({"names": sorted(eng & effect_names), "prefixes": sorted(prefixes)}, f, indent=0)
     rows = classify(ds, pyfa, eng, prefixes)
     os.makedirs(a.out, exist_ok=True)
     json.dump(rows, open(os.path.join(a.out, "pyfa-effects.json"), "w"), indent=1, sort_keys=True)

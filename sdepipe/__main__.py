@@ -6,7 +6,9 @@ from .validate import validate
 LATEST = "https://developers.eveonline.com/static-data/tranquility/latest.jsonl"
 ZIP = "https://developers.eveonline.com/static-data/tranquility/eve-online-static-data-{build}-jsonl.zip"
 NEEDED = ("_sde", "categories", "groups", "types", "typeDogma", "dogmaAttributes", "dogmaEffects",
-          "dbuffCollections", "dynamicItemAttributes", "fighterAbilities", "fighterAbilitiesByType")
+          "dbuffCollections", "dynamicItemAttributes", "fighterAbilities", "fighterAbilitiesByType",
+          "marketGroups", "metaGroups", "dogmaUnits", "typeBonus", "cloneGrades", "mapRegions", "mapConstellations",
+          "mapSolarSystems", "mapSecondarySuns", "systemWideEffects", "typeLists")
 
 
 def latest_build() -> int:

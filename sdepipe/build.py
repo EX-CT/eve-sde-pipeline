@@ -11,7 +11,8 @@ import json
 import os
 from typing import Any, Dict, Iterator
 
-from . import FORMAT, FORMAT_VERSION, __version__
+from . import DATASET_REVISION, FORMAT, FORMAT_VERSION, __version__
+from .extras import build_extras
 
 # Categories relevant to fitting.
 FIT_CATEGORIES = {
@@ -204,8 +205,8 @@ def build(sde_dir: str) -> Dict[str, Any]:
         "format_version": FORMAT_VERSION,
         "generator": f"eve-sde-pipeline {__version__}",
         "sde": {"build": meta["buildNumber"], "release_date": meta.get("releaseDate")},
+        "dataset_revision": DATASET_REVISION,
         "categories": categories,
-        "groups": {str(k): v for k, v in groups.items() if v["category"] in FIT_CATEGORIES or v["category"] == CELESTIAL_CATEGORY or any(t["group"] == k for t in ())},
         "attributes": attributes,
         "effects": effects,
         "types": types,
@@ -219,6 +220,7 @@ def build(sde_dir: str) -> Dict[str, Any]:
     used_groups = {t["group"] for t in types.values()}
     ds["groups"] = {str(k): v for k, v in groups.items() if k in used_groups}
     ds["_unknown_modifiers"] = sorted([list(map(str, u)) for u in unknown])
+    ds.update(build_extras(sde_dir, read_jsonl, types, groups))
     return ds
 
 
@@ -239,11 +241,20 @@ def apply_patches(ds: Dict[str, Any], patch_dir: str) -> None:
         ds["patches"].append({"id": patch["id"], "description": patch.get("description", "")})
 
 
+def dataset_filename(build_no: int, revision: int) -> str:
+    """Revision 1 kept the historic name; later revisions get a suffix so published files are never overwritten."""
+    return f"dataset-{build_no}.json.gz" if revision <= 1 else f"dataset-{build_no}-r{revision}.json.gz"
+
+
+def release_tag(build_no: int, revision: int) -> str:
+    return f"sde-{build_no}" if revision <= 1 else f"sde-{build_no}-r{revision}"
+
+
 def dump(ds: Dict[str, Any], out_dir: str) -> Dict[str, Any]:
     os.makedirs(out_dir, exist_ok=True)
     raw = json.dumps(ds, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
     build_no = ds["sde"]["build"]
-    path = os.path.join(out_dir, f"dataset-{build_no}.json.gz")
+    path = os.path.join(out_dir, dataset_filename(build_no, ds.get("dataset_revision", 1)))
     with open(path, "wb") as fh:
         # mtime=0 for determinism
         with gzip.GzipFile(fileobj=fh, mode="wb", mtime=0, compresslevel=9, filename="") as gz:
@@ -252,13 +263,16 @@ def dump(ds: Dict[str, Any], out_dir: str) -> Dict[str, Any]:
         "format": FORMAT,
         "format_version": FORMAT_VERSION,
         "sde_build": build_no,
+        "dataset_revision": ds.get("dataset_revision", 1),
+        "release_tag": release_tag(build_no, ds.get("dataset_revision", 1)),
         "sde_release_date": ds["sde"]["release_date"],
         "file": os.path.basename(path),
         "sha256_json": hashlib.sha256(raw).hexdigest(),
         "sha256_gz": hashlib.sha256(open(path, "rb").read()).hexdigest(),
         "bytes_json": len(raw),
         "bytes_gz": os.path.getsize(path),
-        "counts": {k: len(ds[k]) for k in ("types", "groups", "attributes", "effects", "dbuffs", "mutaplasmids")},
+        "counts": {k: len(ds[k]) for k in ("types", "groups", "attributes", "effects", "dbuffs", "mutaplasmids", "market_groups",
+                                            "traits", "required_skills") if k in ds},
         "patches": ds["patches"],
         "generator": ds["generator"],
     }

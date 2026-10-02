@@ -26,6 +26,7 @@ FIT_CATEGORIES = {
     66,  # Structure Module
     87,  # Fighter
 }
+EXTRA_TYPES = {1373}  # Character type (owner of skills; char attributes like maxActiveDrones)
 CELESTIAL_CATEGORY = 2  # effect beacons (wormhole / abyssal / incursion / system effects) when they carry dogma
 
 FUNC_CODES = {
@@ -104,7 +105,7 @@ def build(sde_dir: str) -> Dict[str, Any]:
             continue
         cat = g["category"]
         td = type_dogma.get(tid)
-        keep = cat in FIT_CATEGORIES or tid in muta_related or (cat == CELESTIAL_CATEGORY and td and td.get("dogmaEffects"))
+        keep = cat in FIT_CATEGORIES or tid in EXTRA_TYPES or tid in muta_related or (cat == CELESTIAL_CATEGORY and td and td.get("dogmaEffects"))
         if not keep:
             continue
         entry = {

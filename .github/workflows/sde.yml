@@ -54,9 +54,15 @@ jobs:
       - name: Build + validate dataset
         if: steps.chk.outputs.skip != '1'
         run: python -m sdepipe build --sde sde --out dist
+      - name: Presets (presets.json from this SDE build; copyleft Pyfa tables separately)
+        if: steps.chk.outputs.skip != '1'
+        run: |
+          git clone -q --depth 1 https://github.com/pyfa-org/Pyfa pyfa || echo "Pyfa clone failed: presets-pyfa skipped"
+          PY=""; [ -d pyfa/eos ] && PY="--pyfa pyfa"
+          python tools/make_presets.py --sde sde $PY --out dist/presets
       - name: Unit tests
         if: steps.chk.outputs.skip != '1'
-        env: { SDEPIPE_DIST: dist }
+        env: { SDEPIPE_DIST: dist, SDEPIPE_PRESETS: dist/presets }
         run: python -m unittest discover -s tests -v
       - name: Diff against previous release
         if: steps.chk.outputs.skip != '1'
@@ -82,7 +88,9 @@ jobs:
         run: |
           B=${{ steps.b.outputs.build }}; TAG=${{ steps.b.outputs.tag }}; F=${{ steps.b.outputs.file }}
           cp dist/manifest.json "dist/manifest-$B.json"; cp LICENSE.EVE dist/
-          ASSETS="dist/$F dist/manifest.json dist/manifest-$B.json dist/CHANGELOG-$B.md dist/LICENSE.EVE"
+          ASSETS="dist/$F dist/manifest.json dist/manifest-$B.json dist/CHANGELOG-$B.md dist/LICENSE.EVE dist/presets/presets.json"
+          # Pyfa-derived tables are LGPL/GPL: separately named asset, never part of the CCP/MIT default set.
+          if [ -f dist/presets/presets-pyfa.json ]; then cp dist/presets/presets-pyfa.json dist/presets-pyfa-LGPL-GPL.json; ASSETS="$ASSETS dist/presets-pyfa-LGPL-GPL.json"; fi
           for f in dist/diff-$B.json dist/pyfa-effects-coverage.md dist/pyfa-effects.json; do [ -f "$f" ] && ASSETS="$ASSETS $f"; done
           { echo "Engine dataset for CCP SDE build $B ($F, format v1, revision $(python -c 'import sdepipe;print(sdepipe.DATASET_REVISION)'))."
             echo "Built by ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. EVE data © CCP hf., see LICENSE.EVE."

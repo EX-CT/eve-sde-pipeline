@@ -5,6 +5,21 @@ doesn't know. `dataset_revision` counts content revisions of the pipeline output
 tags carry a suffix (`dataset-<build>-r<rev>.json.gz`, release `sde-<build>-r<rev>`), so published files are never
 overwritten.
 
+## Revision 5 (pipeline 0.5.0, 2026-10-03)
+- New release asset `presets.json` (fitting presets from the SDE, generated in CI by `tools/make_presets.py`, merged
+  from variant G's `presets` branch). It holds damage profiles (generic / per ammo / per NPC faction and context),
+  target profiles (generic / NPC faction × hull), NPC damage types, implant sets, character skill presets and search
+  aliases. Licences: data under CCP's third-party licence (`LICENSE.EVE`); rules and hand-written tables under MIT.
+  It contains no Pyfa data. See `presets/README.md`.
+- Pyfa's built-in damage patterns and target profiles (LGPL, from the eos headers) and jargon (GPL-3.0) are published
+  only as the separately named asset `presets-pyfa-LGPL-GPL.json`. That file is extracted as data literals with
+  per-section licence and commit provenance. It is not part of the default asset set.
+- Review fix: implant sets now come only from real set-bonus attributes, so 51 sets became 47. The per-slot
+  `implantSetHackingVirusCoherenceModifier` and the `...OmegaSetBonusFAKE` display attribute had produced bogus
+  partial "Wedge" sets. `wedge.low-grade` / `wedge.mid-grade` now name the real Omega set.
+- Dataset content is unchanged vs r4 apart from `dataset_revision` and `generator`. The release is
+  `sde-3569502-r5`, file `dataset-3569502-r5.json.gz`. Earlier files are unchanged.
+
 ## Revision 4 (pipeline 0.4.0, 2026-10-03)
 - Promoted the three reviewed patches from `patches/proposed/` to `patches/` (applied by default). Engine owner A
   approved all three (eve-dogma-rs `docs/review-sde-proposed-patches.md`):

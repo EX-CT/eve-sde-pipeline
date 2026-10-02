@@ -1,0 +1,174 @@
+{
+ "id": "0101-aoe-burst-projectors",
+ "status": "proposed",
+ "description": "Burst projectors / Standup burst projectors (doomsdayAOE*) and Standup weapon disruptor. Pyfa: when projected onto a ship that does not have disallowOffensiveModifiers, PostPercent the target ship attribute by the module attribute (web: maxVelocity by speedFactor; paint: signatureRadius by signatureRadiusBonus; damp: maxTargetRange by maxTargetRangeBonus and scanResolution by scanResolutionBonus; track/weapon disruption: missile charges (Missile Launcher Operation) aoeCloudSize/aoeVelocity/maxVelocity/explosionDelay and Gunnery turrets trackingSpeed/maxRange/falloff by the matching *Bonus attribute), all stacking-penalised. Standup Weapon Disruptor additionally scales by the optimal/falloff range factor, which the engine must apply (as for ordinary weapon disruptors). ECM and neut bursts (doomsdayAOEECM/Neut) are not modifiers (jam chance / cap drain stats) and stay engine-side.",
+ "reference": "Pyfa eos/effects.py (behaviour only)",
+ "set": {
+  "effects": {
+   "6476": {
+    "mods": [
+     [
+      0,
+      5,
+      37,
+      20,
+      6,
+      0
+     ]
+    ]
+   },
+   "6478": {
+    "mods": [
+     [
+      0,
+      5,
+      552,
+      554,
+      6,
+      0
+     ]
+    ]
+   },
+   "6481": {
+    "mods": [
+     [
+      0,
+      5,
+      76,
+      309,
+      6,
+      0
+     ],
+     [
+      0,
+      5,
+      564,
+      566,
+      6,
+      0
+     ]
+    ]
+   },
+   "6479": {
+    "mods": [
+     [
+      4,
+      5,
+      654,
+      848,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      653,
+      847,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      37,
+      547,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      281,
+      596,
+      6,
+      3319
+     ],
+     [
+      3,
+      5,
+      160,
+      767,
+      6,
+      3300
+     ],
+     [
+      3,
+      5,
+      54,
+      351,
+      6,
+      3300
+     ],
+     [
+      3,
+      5,
+      158,
+      349,
+      6,
+      3300
+     ]
+    ]
+   },
+   "6686": {
+    "mods": [
+     [
+      4,
+      5,
+      654,
+      848,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      653,
+      847,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      37,
+      547,
+      6,
+      3319
+     ],
+     [
+      4,
+      5,
+      281,
+      596,
+      6,
+      3319
+     ],
+     [
+      3,
+      5,
+      160,
+      767,
+      6,
+      3300
+     ],
+     [
+      3,
+      5,
+      54,
+      351,
+      6,
+      3300
+     ],
+     [
+      3,
+      5,
+      158,
+      349,
+      6,
+      3300
+     ]
+    ]
+   }
+  }
+ }
+}

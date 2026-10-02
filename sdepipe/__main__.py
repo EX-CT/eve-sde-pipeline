@@ -41,6 +41,7 @@ def main(argv=None):
     d = sub.add_parser("download"); d.add_argument("--build", default="latest"); d.add_argument("--dest", required=True)
     b = sub.add_parser("build"); b.add_argument("--sde", required=True); b.add_argument("--out", required=True)
     b.add_argument("--patches", default=os.path.join(os.path.dirname(__file__), "..", "patches"))
+    b.add_argument("--with-proposed", action="store_true", help="also apply patches/proposed/*.json (not for releases)")
     df = sub.add_parser("diff", help="diff two datasets -> Markdown (+ --json)")
     df.add_argument("old"); df.add_argument("new"); df.add_argument("--md"); df.add_argument("--json")
     df.add_argument("--ccp-changes", help="CCP changes/<build>.jsonl to summarise as well")
@@ -67,6 +68,8 @@ def main(argv=None):
     elif args.cmd == "build":
         ds = build(args.sde)
         apply_patches(ds, args.patches)
+        if args.with_proposed:
+            apply_patches(ds, os.path.join(args.patches, "proposed"))
         errs = validate(ds)
         for e in errs[:50]:
             print("VALIDATION:", e, file=sys.stderr)

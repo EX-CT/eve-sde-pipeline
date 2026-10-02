@@ -49,6 +49,9 @@ class TestPresets(unittest.TestCase):
         self.assertEqual(npc["Angel Cartel"]["primary"], "explosive")
         sets = {x["id"]: x for x in self.p["implant_sets"]["items"]}
         self.assertEqual(sets["crystal.high-grade"]["slots"], [1, 2, 3, 4, 5, 6])
+        self.assertEqual(sets["wedge.low-grade"]["set_attribute"], "implantSetHackingVirusCoherenceOmegaSetBonus")
+        for x in sets.values():  # only genuine set-bonus attributes, no per-slot modifiers or FAKE display copies
+            self.assertFalse(x["set_attribute"].endswith("Modifier") or x["set_attribute"].upper().endswith("FAKE"), x["id"])
         sk = {x["id"]: x for x in self.p["character_skill_presets"]["items"]}
         self.assertEqual(sk["all5"]["default_level"], 5)
         self.assertGreater(len(self.p["character_skill_presets"]["published_skills"]), 400)

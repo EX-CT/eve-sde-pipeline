@@ -23,6 +23,11 @@ and follow LGPL/GPL when you redistribute it. No Pyfa code is used or copied: th
 literals. Every section carries a `provenance` object with: source, SDE build and files, method, generator, and
 `license`.
 
+Licence note: the eos headers say "GNU Lesser General Public License ... version 2 of the License, or (at your
+option) any later version". LGPL version 2 was the *Library* GPL 2.0, so the literal reading is LGPL-2.0-or-later.
+We label it `LGPL-2.1-or-later`, which that grant permits. In releases the file ships as a separately named asset
+(`presets-pyfa-LGPL-GPL.json`), never inside the CCP/MIT default set.
+
 ## Sections of `presets.json` (SDE 3569502)
 
 | section | count | what / how |
@@ -34,7 +39,7 @@ literals. Every section carries a `provenance` object with: source, SDE build an
 | `target_profiles.npc` | 106 | median over the NPC types of a (faction, hull class): resists per layer and HP-weighted, signature radius, max velocity, radius, HP |
 | `npc_damage_types.factions` | 19 | damage share per faction, primary damage type, and secondary (share > 5 %) |
 | `npc_damage_types.types` | 5185 | every armed NPC type: DPS by damage type, share, primary types |
-| `implant_sets` | 51 | published implants carrying an `implantSet*` attribute (set bonus multiplier), grouped by attribute and Low/Mid/High grade. Members with slot (`implantness`) and multiplier; `complete` means all 6 slots are present |
+| `implant_sets` | 47 | published implants carrying an `implantSet*` set-bonus attribute (multiplier; per-slot `...Modifier` and `...FAKE` display attributes excluded), grouped by attribute and Low/Mid/High grade. Members with slot (`implantness`) and multiplier; `complete` means all 6 slots are present |
 | `character_skill_presets` | 10 | All 0 … All 5 (every published skill, 512) and the SDE clone grades (alpha clone caps) |
 | `search_aliases` | 108 | EX-CT abbreviation table (mwd, scram, lse, bcs, haml, rf, …) resolved to type ids by whole-word match on English names. 6 aliases with no match are listed in `dropped_no_match` |
 

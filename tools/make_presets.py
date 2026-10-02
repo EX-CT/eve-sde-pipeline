@@ -371,7 +371,10 @@ def generic_target_profiles():
 
 def implant_sets(sde):
     """implants carrying an implantSet* attribute (the set-bonus multiplier), grouped by attribute and grade"""
-    set_attrs = {k: a for k, a in sde.attrs.items() if a["name"].startswith("implantSet")}
+    # Only real set-bonus multipliers: skip per-implant modifiers (implantSetHackingVirusCoherenceModifier, which
+    # scales 1..5 by slot) and client display copies (...SetBonusFAKE), which would otherwise form bogus "sets".
+    set_attrs = {k: a for k, a in sde.attrs.items() if a["name"].startswith("implantSet")
+                 and not a["name"].endswith("Modifier") and not a["name"].upper().endswith("FAKE")}
     sets = {}
     for tid in sorted(sde.types):
         t = sde.types[tid]

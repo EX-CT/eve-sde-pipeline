@@ -18188,103 +18188,9 @@
     ]
    },
    {
-    "complete": false,
-    "grade": "low-grade",
-    "id": "wedge.low-grade",
-    "members": [
-     {
-      "name": "Low-grade Wedge Alpha",
-      "set_bonus_multiplier": 1.0,
-      "slot": 1,
-      "type_id": 88119
-     },
-     {
-      "name": "Low-grade Wedge Beta",
-      "set_bonus_multiplier": 2.0,
-      "slot": 2,
-      "type_id": 88120
-     },
-     {
-      "name": "Low-grade Wedge Gamma",
-      "set_bonus_multiplier": 3.0,
-      "slot": 3,
-      "type_id": 88121
-     },
-     {
-      "name": "Low-grade Wedge Delta",
-      "set_bonus_multiplier": 4.0,
-      "slot": 4,
-      "type_id": 88122
-     },
-     {
-      "name": "Low-grade Wedge Epsilon",
-      "set_bonus_multiplier": 5.0,
-      "slot": 5,
-      "type_id": 88123
-     }
-    ],
-    "name": "Low-grade Wedge",
-    "set_attribute": "implantSetHackingVirusCoherenceModifier",
-    "set_attribute_id": 5799,
-    "slots": [
-     1,
-     2,
-     3,
-     4,
-     5
-    ]
-   },
-   {
-    "complete": false,
-    "grade": "mid-grade",
-    "id": "wedge.mid-grade",
-    "members": [
-     {
-      "name": "Mid-grade Wedge Alpha",
-      "set_bonus_multiplier": 2.0,
-      "slot": 1,
-      "type_id": 88125
-     },
-     {
-      "name": "Mid-grade Wedge Beta",
-      "set_bonus_multiplier": 3.0,
-      "slot": 2,
-      "type_id": 88126
-     },
-     {
-      "name": "Mid-grade Wedge Gamma",
-      "set_bonus_multiplier": 4.0,
-      "slot": 3,
-      "type_id": 88127
-     },
-     {
-      "name": "Mid-grade Wedge Delta",
-      "set_bonus_multiplier": 5.0,
-      "slot": 4,
-      "type_id": 88128
-     },
-     {
-      "name": "Mid-grade Wedge Epsilon",
-      "set_bonus_multiplier": 6.0,
-      "slot": 5,
-      "type_id": 88129
-     }
-    ],
-    "name": "Mid-grade Wedge",
-    "set_attribute": "implantSetHackingVirusCoherenceModifier",
-    "set_attribute_id": 5799,
-    "slots": [
-     1,
-     2,
-     3,
-     4,
-     5
-    ]
-   },
-   {
     "complete": true,
     "grade": "low-grade",
-    "id": "wedge.low-grade.implantsethackingviruscoherenceomegasetbonus",
+    "id": "wedge.low-grade",
     "members": [
      {
       "name": "Low-grade Wedge Alpha",
@@ -18338,7 +18244,7 @@
    {
     "complete": true,
     "grade": "mid-grade",
-    "id": "wedge.mid-grade.implantsethackingviruscoherenceomegasetbonus",
+    "id": "wedge.mid-grade",
     "members": [
      {
       "name": "Mid-grade Wedge Alpha",
@@ -18386,44 +18292,6 @@
      3,
      4,
      5,
-     6
-    ]
-   },
-   {
-    "complete": false,
-    "grade": "low-grade",
-    "id": "wedge.low-grade.implantsethackingviruscoherenceomegasetbonusfake",
-    "members": [
-     {
-      "name": "Low-grade Wedge Omega",
-      "set_bonus_multiplier": 40.0,
-      "slot": 6,
-      "type_id": 88124
-     }
-    ],
-    "name": "Low-grade Wedge",
-    "set_attribute": "implantSetHackingVirusCoherenceOmegaSetBonusFAKE",
-    "set_attribute_id": 5800,
-    "slots": [
-     6
-    ]
-   },
-   {
-    "complete": false,
-    "grade": "mid-grade",
-    "id": "wedge.mid-grade.implantsethackingviruscoherenceomegasetbonusfake",
-    "members": [
-     {
-      "name": "Mid-grade Wedge Omega",
-      "set_bonus_multiplier": 60.0,
-      "slot": 6,
-      "type_id": 88130
-     }
-    ],
-    "name": "Mid-grade Wedge",
-    "set_attribute": "implantSetHackingVirusCoherenceOmegaSetBonusFAKE",
-    "set_attribute_id": 5800,
-    "slots": [
      6
     ]
    },

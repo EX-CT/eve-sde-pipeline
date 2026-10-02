@@ -8,7 +8,7 @@ ZIP = "https://developers.eveonline.com/static-data/tranquility/eve-online-stati
 NEEDED = ("_sde", "categories", "groups", "types", "typeDogma", "dogmaAttributes", "dogmaEffects",
           "dbuffCollections", "dynamicItemAttributes", "fighterAbilities", "fighterAbilitiesByType",
           "marketGroups", "metaGroups", "dogmaUnits", "typeBonus", "cloneGrades", "mapRegions", "mapConstellations",
-          "mapSolarSystems", "mapSecondarySuns", "systemWideEffects", "typeLists")
+          "mapSolarSystems", "mapSecondarySuns", "systemWideEffects", "typeLists", "factions")  # factions: presets
 
 
 def latest_build() -> int:

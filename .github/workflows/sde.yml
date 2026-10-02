@@ -18,7 +18,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["sdepipe/**", "patches/*.json", "tests/**"]
+    paths: ["sdepipe/**", "patches/**", "tests/**", "tools/**", ".github/workflows/sde.yml"]
 permissions:
   contents: write
 concurrency:
@@ -76,11 +76,7 @@ jobs:
       - name: Pyfa effect coverage
         if: steps.chk.outputs.skip != '1'
         continue-on-error: true
-        run: |
-          mkdir -p pyfa/eos
-          curl -sfL https://raw.githubusercontent.com/pyfa-org/Pyfa/master/eos/effects.py -o pyfa/eos/effects.py
-          python tools/pyfa_effects.py --pyfa pyfa --dataset dist/${{ steps.b.outputs.file }} \
-            --engine-names tools/engine-effect-names.json --out dist
+        run: bash tools/ci_coverage.sh dist/${{ steps.b.outputs.file }} dist
       - name: Publish release
         if: steps.chk.outputs.skip != '1'
         run: |
@@ -97,3 +93,27 @@ jobs:
             gh release create "$TAG" $ASSETS --title "SDE build $B (r$(python -c 'import sdepipe;print(sdepipe.DATASET_REVISION)'))" --notes-file notes.md --latest
           fi
           echo "Published ${{ github.server_url }}/${{ github.repository }}/releases/tag/$TAG" >> "$GITHUB_STEP_SUMMARY"
+
+  # Refreshes the Pyfa coverage report on every run (also when the dataset release is skipped), using the live
+  # public engine source (EX-CT/eve-dogma-rs) and the committed tools/engine-effect-names.json as fallback/union.
+  coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Coverage against latest release
+        run: |
+          TAG=$(gh release list --limit 50 --json tagName,createdAt --jq '[.[] | select(.tagName|startswith("sde-"))] | sort_by(.createdAt) | last | .tagName')
+          mkdir -p latest out && gh release download "$TAG" -D latest -p 'dataset-*.json.gz'
+          bash tools/ci_coverage.sh latest/dataset-*.json.gz out
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          { echo "### Pyfa coverage ($TAG)"; head -c 30000 out/pyfa-effects-coverage.md; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with: { name: pyfa-coverage, path: out/ }
+      - name: Update coverage assets on latest release
+        run: gh release upload "$TAG" out/pyfa-effects-coverage.md out/pyfa-effects.json out/engine-effect-names.json --clobber

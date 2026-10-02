@@ -33,6 +33,45 @@ class TestDataset(unittest.TestCase):
     def test_warfare_buffs(self):
         self.assertIn("10", self.ds["dbuffs"])
 
+    def test_revision_and_sections(self):
+        from sdepipe import DATASET_REVISION
+        self.assertEqual(self.ds["dataset_revision"], DATASET_REVISION)
+        for sec in ("market_groups", "meta_groups", "units", "traits", "required_skills", "clone_grades",
+                    "environment", "names_i18n", "mutaplasmids"):
+            self.assertIn(sec, self.ds)
+
+    def test_chinese_names(self):
+        self.assertTrue(self.ds["types"]["587"].get("name_zh") or self.ds["names"]["zh"].get("587"))
+        self.assertTrue(self.ds["names_i18n"]["zh"]["groups"])
+
+    def test_traits_and_skills(self):
+        self.assertIn("587", self.ds["traits"])          # Rifter has bonus text
+        self.assertIn("587", self.ds["required_skills"])  # Minmatar Frigate
+
+    def test_environment(self):
+        env = self.ds["environment"]
+        kinds = {b["kind"] for b in env["effect_beacons"].values()}
+        self.assertTrue({"wormhole", "abyssal", "triglavian", "incursion"} <= kinds, kinds)
+        self.assertTrue(any(b["dbuffs"] for b in env["effect_beacons"].values()))
+
+
+class TestDiff(unittest.TestCase):
+    def test_synthetic(self):
+        from sdepipe import diff as dmod
+        old = {"sde": {"buildNumber": 1}, "dataset_revision": 3,
+               "types": {"1": {"name": "A", "attrs": {"9": 1.0}}, "2": {"name": "B", "attrs": {}}},
+               "attributes": {"9": {"name": "hp"}}}
+        new = {"sde": {"buildNumber": 2}, "dataset_revision": 3,
+               "types": {"1": {"name": "A", "attrs": {"9": 2.0}}, "3": {"name": "C", "attrs": {}}},
+               "attributes": {"9": {"name": "hp"}}}
+        d = dmod.diff(old, new)
+        t = d["sections"]["types"]
+        self.assertEqual([i["key"] for i in t["added"]], ["3"])
+        self.assertEqual([i["key"] for i in t["removed"]], ["2"])
+        self.assertEqual([c["key"] for c in t["changed"]], ["1"])
+        md = dmod.markdown(d, new)
+        self.assertIn("hp: 1.0 → 2.0", md)
+
 
 if __name__ == "__main__":
     unittest.main()

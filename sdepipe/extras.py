@@ -23,6 +23,9 @@ WORMHOLE_CLASS_LABELS = {
 
 LANGS = ("en", "zh")
 
+# warfareBuffNID / warfareBuffNValue attribute ids (resolved by name at build time, see build_extras)
+WARFARE_BUFF_ATTRS: Dict[int, tuple] = {}
+
 # Celestial groups whose types are system / site environment effects (Pyfa "Effect Beacon" style projections)
 ENV_GROUPS = {"Effect Beacon", "Destructible Effect Beacon", "Abyssal Hazards", "MassiveEnvironments",
               "Triglavian Support Pylons"}
@@ -58,6 +61,9 @@ def _rows(read, path: str) -> Iterable[Dict[str, Any]]:
 def build_extras(sde_dir: str, read, types: Dict[str, Any], groups_all: Dict[int, Any]) -> Dict[str, Any]:
     p = lambda f: os.path.join(sde_dir, f + ".jsonl")
     out: Dict[str, Any] = {}
+    by_name = {a["name"]: a["_key"] for a in _rows(read, p("dogmaAttributes"))}
+    for n in range(1, 5):
+        WARFARE_BUFF_ATTRS[n] = (by_name.get(f"warfareBuff{n}ID"), by_name.get(f"warfareBuff{n}Value"))
     zh: Dict[str, Dict[str, str]] = {"groups": {}, "categories": {}, "market_groups": {}, "meta_groups": {},
                                      "attributes": {}, "units": {}}
 
@@ -158,7 +164,15 @@ def build_extras(sde_dir: str, read, types: Dict[str, Any], groups_all: Dict[int
     for k, t in types.items():
         gname = groups_all.get(t["group"], {}).get("name")
         if t.get("category") == 2 and t.get("effects") and gname in ENV_GROUPS:
-            beacons[k] = {"name": t["name"], "group": t["group"], "group_name": gname, "kind": beacon_kind(t["name"], gname)}
+            a = t.get("attrs", {})
+            # warfare buffs the beacon emits (Pyfa applies them like fleet command bursts): warfareBuffNID/Value
+            buffs = {}
+            for n in range(1, 5):
+                bid = a.get(str(WARFARE_BUFF_ATTRS[n][0]))
+                if bid:
+                    buffs[str(int(bid))] = a.get(str(WARFARE_BUFF_ATTRS[n][1]), 0.0)
+            beacons[k] = {"name": t["name"], "group": t["group"], "group_name": gname, "kind": beacon_kind(t["name"], gname),
+                          "dbuffs": buffs}
     sw = {}
     for e in _rows(read, p("systemWideEffects")):
         sw[str(e["_key"])] = {"dbuffs": {str(d["_key"]): d["_value"] for d in e.get("dbuffs", [])},

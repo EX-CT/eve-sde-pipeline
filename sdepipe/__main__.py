@@ -41,6 +41,9 @@ def main(argv=None):
     d = sub.add_parser("download"); d.add_argument("--build", default="latest"); d.add_argument("--dest", required=True)
     b = sub.add_parser("build"); b.add_argument("--sde", required=True); b.add_argument("--out", required=True)
     b.add_argument("--patches", default=os.path.join(os.path.dirname(__file__), "..", "patches"))
+    df = sub.add_parser("diff", help="diff two datasets -> Markdown (+ --json)")
+    df.add_argument("old"); df.add_argument("new"); df.add_argument("--md"); df.add_argument("--json")
+    df.add_argument("--ccp-changes", help="CCP changes/<build>.jsonl to summarise as well")
     args = ap.parse_args(argv)
     if args.cmd == "latest":
         print(latest_build())
@@ -48,6 +51,19 @@ def main(argv=None):
         bn = latest_build() if args.build == "latest" else int(args.build)
         download(bn, args.dest)
         print(bn)
+    elif args.cmd == "diff":
+        from . import diff as dmod
+        new = dmod.load(args.new)
+        d = dmod.diff(dmod.load(args.old), new)
+        md = dmod.markdown(d, new)
+        if args.ccp_changes:
+            md += dmod.ccp_changes_markdown(args.ccp_changes)
+        if args.md:
+            open(args.md, "w", encoding="utf-8").write(md)
+        else:
+            sys.stdout.write(md)
+        if args.json:
+            json.dump(d, open(args.json, "w", encoding="utf-8"), indent=1, sort_keys=True, ensure_ascii=False)
     elif args.cmd == "build":
         ds = build(args.sde)
         apply_patches(ds, args.patches)

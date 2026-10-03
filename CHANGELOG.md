@@ -5,6 +5,12 @@ doesn't know. `dataset_revision` counts content revisions of the pipeline output
 tags carry a suffix (`dataset-<build>-r<rev>.json.gz`, release `sde-<build>-r<rev>`), so published files are never
 overwritten.
 
+## Unreleased
+- Docs only, no dataset change: `docs/pyfa-data-drift.{md,json}` records the known differences between Pyfa's
+  `eve.db` (client 3532181) and the dataset, with eve's rulings. Paladin/Golem agility and remote capacitor impedance
+  are expected differences. For T3C maxSubSystems the decision is to keep CCP's 5, with no patch. Added
+  `tools/pyfa_drift.py` (re-check tool) and `tests/test_pyfa_drift.py`.
+
 ## Revision 5 (pipeline 0.5.0, 2026-10-03)
 - New release asset `presets.json` (fitting presets from the SDE, generated in CI by `tools/make_presets.py`, merged
   from variant G's `presets` branch). It holds damage profiles (generic / per ammo / per NPC faction and context),

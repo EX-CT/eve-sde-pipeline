@@ -23,6 +23,19 @@ Pure Python stdlib, no dependencies. Output is byte-for-byte deterministic (sort
   (codes in `sdepipe/build.py`).
 * `patches/*.json` are applied after conversion (`{"id":…, "description":…, "set": {"types": {"587": {...}}}}`).
 
+## Known Pyfa data drift
+Pyfa's bundled `eve.db` (client build 3532181) is older than the SDE the pipeline publishes. The pipeline keeps
+CCP's data, and the known differences are listed in [`docs/pyfa-data-drift.md`](docs/pyfa-data-drift.md), with a
+machine-readable allowlist in [`docs/pyfa-data-drift.json`](docs/pyfa-data-drift.json) for oracle comparisons and fuzzers:
+- Paladin / Golem agility: Pyfa 0.858 / 0.963, SDE 0.0858 / 0.0963. CCP fixed it after 3532181, by 3552227.
+  Expected difference on `align_time_s`.
+- `remoteCapacitorImpedance` (6463/6464, remote capacitor transmitter resistance): new in the SDE, absent in Pyfa.
+  Expected difference for remote cap onto capitals or onto ships running Siege/Triage/Bastion/Industrial Core.
+- T3C `maxSubSystems` (1367): Pyfa forces 4, the SDE says 5. Decision: no pipeline patch. Fit legality is the
+  engine/validation layer's job.
+
+Re-check with `python3 tools/pyfa_drift.py --eve-db PATH/eve.db --dataset dist/dataset-*.json.gz`.
+
 ## Automation (`.github/workflows/sde.yml`)
 Triggers: cron every 6 h, manual dispatch (`build`, `force`), and pushes to `sdepipe/`, `patches/` or `tests/`.
 1. Resolve the TQ build from `latest.jsonl` and derive the tag `sde-<build>-r<rev>`. Skip if that release exists.

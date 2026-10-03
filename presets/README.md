@@ -8,8 +8,11 @@ python tools/make_presets.py --sde SDE_JSONL_DIR [--pyfa PYFA_CHECKOUT] --out pr
 python -m unittest tests.test_presets
 ```
 
-Pure stdlib and deterministic: the same inputs give byte-identical files. The committed files come from
-SDE build 3569502 (2026-10-02) and Pyfa commit 1d9f72b.
+Pure stdlib and deterministic: the same inputs give byte-identical files. The generated files are **not committed**
+(LICENSING.md: generated data ships as release assets). CI builds them for every release: `presets.json` and, as a
+separately labelled asset, `presets-pyfa-LGPL-GPL.json`. Download them with
+`gh release download -R EX-CT/eve-sde-pipeline -p 'presets*.json'`. The counts below are from SDE build 3569502
+(2026-10-02) and Pyfa commit 1d9f72b.
 
 ## Two files, two licence regimes
 

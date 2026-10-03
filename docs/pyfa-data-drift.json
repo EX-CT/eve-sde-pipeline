@@ -175,8 +175,9 @@
     "after": 3532181,
     "by": 3552227
    },
-   "ruling": "eve 2026-10-03: keep CCP data",
-   "also_on": "fighters (6463 = 0.0) and Upwell structures (1e-05 or 0.0): outside bench/fuzz scope (no remote cap onto fighters; structures excluded); tools/pyfa_drift.py reports them as 'only-dataset 6463' on 111 types"
+   "ruling": "eve 2026-10-03: keep CCP data; reconfirmed 14:26 (drift entry, no scoring impact)",
+   "also_on": "fighters (6463 = 0.0) and Upwell structures (1e-05 or 0.0): outside bench/fuzz scope (no remote cap onto fighters; structures excluded); tools/pyfa_drift.py reports them as 'only-dataset 6463' on 111 types",
+   "engine_handling": "eve-dogma follows the dataset (CCP 6463/6464); recorded for oracle comparisons only, does not affect scoring (no scored bench case projects remote cap onto these targets)."
   },
   {
    "id": "t3c-max-subsystems",
@@ -202,7 +203,8 @@
    "metrics": [],
    "match": "only if a metric or legality check reads maxSubSystems directly; no bench metric does today",
    "reason": "Not CCP drift: Pyfa's db_update.py overwrites attribute 1367 with 4 because only 4 subsystem slots are usable. The dataset keeps CCP's 5; fit legality (4 subsystems, one per slot type) belongs to the engine/validation layer, which should behave like Pyfa.",
-   "ruling": "eve 2026-10-03: keep CCP's 5, no pipeline patch"
+   "ruling": "eve 2026-10-03: keep CCP's 5, no pipeline patch; reconfirmed 14:26 (engine still validates with 4; no scoring impact)",
+   "engine_handling": "eve-dogma validation keeps 4 subsystems (one per subsystem slot type), as Pyfa does; the dataset value 5 is not used for legality. Seen as a data difference on Proteus (29988) in the F effects-parity audit; applies to all four T3Cs."
   }
  ]
 }
